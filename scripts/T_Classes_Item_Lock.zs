@@ -396,10 +396,6 @@ val itemt2 = [
 <iceandfire:myrmex_desert_hoe>,
 <iceandfire:myrmex_desert_pickaxe>,
 <iceandfire:myrmex_jungle_pickaxe>,
-<cavern:ore_compass>,
-<cavern:aquamarine_shovel>,
-<cavern:aquamarine_axe>,
-<cavern:aquamarine_pickaxe>,
 <minecraft:compass>,
 <minecraft:clock>,
 <minecraft:shears>,
@@ -408,6 +404,10 @@ val itemt2 = [
 <antiqueatlas:empty_antique_atlas>,
 <antiqueatlas:antique_atlas>
  ] as IItemStack[];
+//<cavern:ore_compass>,
+//<cavern:aquamarine_shovel>,
+//<cavern:aquamarine_axe>,
+//<cavern:aquamarine_pickaxe>,
 
 for item in itemt2 {
     mods.compatskills.Requirement.addRequirement(item, "compatskills:tools|8");
@@ -1212,14 +1212,14 @@ val item3summspec = [
 <iceandfire:myrmex_jungle_egg:2>,
 <iceandfire:myrmex_jungle_egg:3>,
 <iceandfire:myrmex_jungle_egg:4>,
-<iceandfire:myrmex_desert_swarm>,
 <iceandfire:myrmex_desert_egg:1>,
 <iceandfire:myrmex_desert_egg:3>,
 <iceandfire:myrmex_desert_staff>,
 <iceandfire:myrmex_jungle_staff>,
-<iceandfire:myrmex_jungle_egg>,
-<iceandfire:myrmex_jungle_swarm>
+<iceandfire:myrmex_jungle_egg>
  ] as IItemStack[];
+//<iceandfire:myrmex_desert_swarm>,
+//<iceandfire:myrmex_jungle_swarm>
 
 for item in item3summspec {
     mods.compatskills.Requirement.addRequirement(item, "trait|compatskills:beast");
