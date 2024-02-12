@@ -853,14 +853,18 @@ val item3sea = [
  ] as IItemStack[];
 
 for item in item3sea {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:defense|20]~[trait|compatskills:armor]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:defense|22]~[trait|compatskills:armor]");
 }
 
 val item1ds = [
 <endreborn:armour_helmet_dragon>,
 <endreborn:armour_leggings_dragon>,
 <endreborn:armour_boots_dragon>,
-<endreborn:armour_chestplate_dragon> 
+<endreborn:armour_chestplate_dragon>,
+<forgottenitems:golem_helmet>,
+<forgottenitems:golem_chestplate>,
+<forgottenitems:golem_leggings>,
+<forgottenitems:golem_boots>    
 ] as IItemStack[];
 /*<iceandfire:dragonsteel_fire_helmet>,
 <iceandfire:dragonsteel_fire_chestplate>,
@@ -987,7 +991,7 @@ val item3worm = [
  ] as IItemStack[];
 
 for item in item3worm {
-    mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|12");
+    mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|16");
 }
 
 val item3 = [
@@ -1015,10 +1019,6 @@ for item in item4 {
 }
 
 val item41= [
-<minecraft:iron_boots>,
-<minecraft:iron_leggings>,
-<minecraft:iron_chestplate>,
-<minecraft:iron_helmet>,
 <mysticalworld:copper_chestplate>,
 <mysticalworld:copper_helmet>,
 <mysticalworld:copper_leggings>,
@@ -1038,9 +1038,19 @@ val item41= [
  ] as IItemStack[];
 
 for item in item41 {
-    mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|8");
+    mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|12");
 }
 
+val item_def_8= [
+<minecraft:iron_boots>,
+<minecraft:iron_leggings>,
+<minecraft:iron_chestplate>,
+<minecraft:iron_helmet>
+] as IItemStack[];
+
+for item in item_def_8 {
+    mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|8");
+}
 
 #shields
 mods.compatskills.Requirement.addRequirement(<spartanshields:shield_tower_diamond>, "and|[reskillable:defense|16]~[trait|compatskills:shield]");
@@ -1345,6 +1355,14 @@ val itemtreatd= [
 <lycanitesmobs:soulstone_worm>,
 <lycanitesmobs:soulstone_angel>,
 <lycanitesmobs:soulstone_avian>,
+<lycanitesmobs:soulstone_arachnid>,
+<lycanitesmobs:soulstone_elemental>,
+<lycanitesmobs:soulstone_reptile>,
+<lycanitesmobs:soulstone_anthronian>,
+<lycanitesmobs:soulstone_golem>,
+<lycanitesmobs:soulstone_insect>,
+<lycanitesmobs:soulstone_amphibian>,
+<lycanitesmobs:soulstone_slime>,
 <lycanitesmobs:soulstone_beast>
  ] as IItemStack[];
 /*
@@ -1365,6 +1383,16 @@ val itemtreatn= [
 <lycanitesmobs:imptreat>,
 <lycanitesmobs:aberrationtreat>,
 <lycanitesmobs:aviantreat>,
+<lycanitesmobs:slimetreat>,
+<lycanitesmobs:elementaltreat>,
+<lycanitesmobs:insecttreat>,
+<lycanitesmobs:halloweentreat>,
+<lycanitesmobs:angeltreat>,
+<lycanitesmobs:anthroniantreat>,
+<lycanitesmobs:golemtreat>,
+<lycanitesmobs:amphibiantreat>,
+<lycanitesmobs:arachnidtreat>,
+<lycanitesmobs:reptiletreat>,
 <lycanitesmobs:wormtreat>,
 <lycanitesmobs:aquatictreat>
  ] as IItemStack[];
