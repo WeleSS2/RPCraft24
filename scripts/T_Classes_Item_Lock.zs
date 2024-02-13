@@ -380,6 +380,10 @@ val itemt2 = [
 <mysticalworld:copper_shovel>,
 <mysticalworld:copper_axe>,
 <mysticalworld:copper_pickaxe>,
+<defiledlands:umbrium_axe>,
+<defiledlands:umbrium_hoe>,
+<defiledlands:umbrium_pickaxe>,
+<defiledlands:umbrium_shovel>,
 <minecraft:iron_hoe>,
 <minecraft:iron_axe>,
 <minecraft:iron_pickaxe>,
@@ -455,14 +459,14 @@ val itemt4 = [
 <endreborn:tool_hoe_wolframium>,
 <endreborn:tool_axe_wolframium>,
 <endreborn:tool_pickaxe_wolframium>,
-<endreborn:tool_shovel_endorium:6>,
+<endreborn:tool_shovel_endorium>,
 <endreborn:tool_hoe_endorium>,
 <endreborn:tool_axe_endorium>,
 <endreborn:tool_pickaxe_endorium>
  ] as IItemStack[];
 
 for item in itemt4 {
-    mods.compatskills.Requirement.addRequirement(item, "compatskills:tools|24");
+    mods.compatskills.Requirement.addRequirement(item, "compatskills:tools|20");
 }
 
 val itemtg = [
@@ -560,7 +564,7 @@ val item1ad = [
 <spartanweaponry:mace_diamond>,
 <spartanweaponry:glaive_diamond>,
 <spartanweaponry:staff_diamond>,
-<aquaculture:neptunium_sword>,
+<endreborn:tool_sword_wolframium>,
 <netherbackport:netheritesword>
  ] as IItemStack[];
 //<cavern:hexcite_sword>,
@@ -568,10 +572,17 @@ val item1ad = [
 for item in item1ad {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|16]~[trait|compatskills:sword]");
 }
-val item1bone = [
-<endreborn:tool_sword_wolframium>,
-<endreborn:tool_sword_endorium>,
+
+val item_nep_1 = [
+<aquaculture:neptunium_sword>,
 <iceandfire:dragonbone_sword>,
+<endreborn:tool_sword_endorium>
+] as IItemStack[];
+for item in item_nep_1 {
+     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|18]~[trait|compatskills:sword]");
+}
+
+val item_drag_1 = [
 <spartanfire:katana_dragonbone>,
 <spartanfire:greatsword_dragonbone>,
 <spartanfire:longsword_dragonbone>,
@@ -592,6 +603,53 @@ val item1bone = [
 <spartanfire:mace_dragonbone>,
 <spartanfire:staff_dragonbone>,
 <spartanfire:glaive_dragonbone>,
+<spartanweaponryarcana:dagger_voidmetal>,
+<spartanweaponryarcana:longsword_voidmetal>,
+<spartanweaponryarcana:katana_voidmetal>,
+<spartanweaponryarcana:saber_voidmetal>,
+<spartanweaponryarcana:rapier_voidmetal>,
+<spartanweaponryarcana:greatsword_voidmetal>,
+<spartanweaponryarcana:hammer_voidmetal>,
+<spartanweaponryarcana:warhammer_voidmetal>,
+<spartanweaponryarcana:spear_voidmetal>,
+<spartanweaponryarcana:halberd_voidmetal>,
+<spartanweaponryarcana:pike_voidmetal>,
+<spartanweaponryarcana:lance_voidmetal>,
+<spartanweaponryarcana:throwing_knife_voidmetal>,
+<spartanweaponryarcana:throwing_axe_voidmetal>,
+<spartanweaponryarcana:javelin_voidmetal>,
+<spartanweaponryarcana:boomerang_voidmetal>,
+<spartanweaponryarcana:battleaxe_voidmetal>,
+<spartanweaponryarcana:mace_voidmetal>,
+<spartanweaponryarcana:glaive_voidmetal>,
+<spartanweaponryarcana:staff_voidmetal>,
+<spartanweaponryarcana:dagger_thaumium>,
+<spartanweaponryarcana:longsword_thaumium>,
+<spartanweaponryarcana:katana_thaumium>,
+<spartanweaponryarcana:saber_thaumium>,
+<spartanweaponryarcana:rapier_thaumium>,
+<spartanweaponryarcana:greatsword_thaumium>,
+<spartanweaponryarcana:hammer_thaumium>,
+<spartanweaponryarcana:warhammer_thaumium>,
+<spartanweaponryarcana:spear_thaumium>,
+<spartanweaponryarcana:halberd_thaumium>,
+<spartanweaponryarcana:pike_thaumium>,
+<spartanweaponryarcana:lance_thaumium>,
+<spartanweaponryarcana:throwing_knife_thaumium>,
+<spartanweaponryarcana:throwing_axe_thaumium>,
+<spartanweaponryarcana:javelin_thaumium>,
+<spartanweaponryarcana:boomerang_thaumium>,
+<spartanweaponryarcana:battleaxe_thaumium>,
+<spartanweaponryarcana:mace_thaumium>,
+<spartanweaponryarcana:glaive_thaumium>,
+<spartanweaponryarcana:staff_thaumium>
+] as IItemStack[];
+for item in item_drag_1 {
+     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|24]~[trait|compatskills:sword]");
+} 
+
+val item1bone = [
+<endreborn:ender_sword>,
 <spartanfire:greatsword_fire_dragonbone>,
 <spartanfire:rapier_fire_dragonbone>,
 <spartanfire:katana_fire_dragonbone>,
@@ -618,6 +676,7 @@ val item1bone = [
 <spartanfire:greatsword_ice_dragonbone>,
 <spartanfire:longsword_ice_dragonbone>,
 <spartanfire:saber_ice_dragonbone>,
+<spartanfire:throwing_knife_ice_dragonbone>,
 <spartanfire:rapier_ice_dragonbone>,
 <spartanfire:dagger_ice_dragonbone>,
 <spartanfire:spear_ice_dragonbone>,
@@ -636,7 +695,7 @@ val item1bone = [
  ] as IItemStack[];
 
 for item in item1bone {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|24]~[trait|compatskills:sword]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|32]~[trait|compatskills:sword]");
 }
 val itemhw= [
 <iceandfire:troll_weapon.trunk_frost>,
@@ -1071,7 +1130,8 @@ mods.compatskills.Requirement.addRequirement(<spartanshields:shield_tc_thaumium>
 mods.compatskills.Requirement.addRequirement(<spartanshields:shield_tower_steel>, "and|[reskillable:defense|12]~[trait|compatskills:shield]");
 mods.compatskills.Requirement.addRequirement(<spartanshields:shield_basic_steel>, "and|[reskillable:defense|12]~[trait|compatskills:shield]");
 mods.compatskills.Requirement.addRequirement(<bountifulbaubles:shieldcobalt>, "and|[reskillable:defense|16]~[trait|compatskills:shield]");
-mods.compatskills.Requirement.addRequirement(<bountifulbaubles:shieldankh>, "and|[reskillable:defense|16]~[trait|compatskills:shield]");
+mods.compatskills.Requirement.addRequirement(<bountifulbaubles:shieldankh>, "and|[reskillable:defense|32]~[trait|compatskills:shield]");
+mods.compatskills.Requirement.addRequirement(<bountifulbaubles:shieldobsidian>, "and|[reskillable:defense|24]~[trait|compatskills:shield]");
 
 
 
@@ -1273,12 +1333,16 @@ val itembow= [
 <endreborn:ender_bow>,
 <iceandfire:dragonbone_bow>,
 <spartanfire:longbow_dragonbone>,
+<spartanfire:longbow_fire_dragonbone>,
 <spartanfire:longbow_ice_dragonbone>,
 <spartanfire:longbow_jungle>,
 <spartanfire:longbow_desert>,
 <spartanfire:longbow_jungle_venom>,
 <spartanfire:longbow_desert_venom>,
+<spartandefiled:longbow_umbrium>,
+<spartanweaponryarcana:longbow_thaumium>,
 <spartanweaponry:longbow_wood>,
+<spartanweaponry:longbow_bronze>,
 <spartanweaponry:longbow_steel>,
 <spartanweaponry:longbow_leather>,
 <spartanweaponry:longbow_iron>,
@@ -1292,6 +1356,15 @@ val itembow= [
 for item in itembow {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:agility|8]~[trait|compatskills:archery]");
 }
+
+val item_bow_12 = [
+<spartanweaponryarcana:longbow_voidmetal>,
+<spartanweaponryarcana:crossbow_voidmetal>
+] as IItemStack[];
+for item in item_bow_12 {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:agility|32]~[trait|compatskills:archery]");
+}
+
 val itemcbow= [
 <spartanfire:crossbow_dragonbone>,
 <spartanfire:crossbow_fire_dragonbone>,
@@ -1300,7 +1373,10 @@ val itemcbow= [
 <spartanfire:crossbow_desert>,
 <spartanfire:crossbow_jungle_venom>,
 <spartanfire:crossbow_desert_venom>,
+<spartandefiled:crossbow_umbrium>,
+<spartanweaponryarcana:crossbow_thaumium>,
 <spartanweaponry:crossbow_wood>,
+<spartanweaponry:crossbow_bronze>,
 <spartanweaponry:crossbow_leather>,
 <spartanweaponry:crossbow_iron>,
 <spartanweaponry:crossbow_diamond>,
@@ -1337,6 +1413,8 @@ mods.compatskills.Requirement.addRequirement(<spartanweaponry:arrow_iron>, "and|
 mods.compatskills.Requirement.addRequirement(<spartanweaponry:arrow_diamond>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
 mods.compatskills.Requirement.addRequirement(<switchbow:switchbow>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
 mods.compatskills.Requirement.addRequirement(<switchbow:switchcrossbow>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
+mods.compatskills.Requirement.addRequirement(<srparasites:weapon_bow>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
+mods.compatskills.Requirement.addRequirement(<srparasites:weapon_bow_sentient>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
 mods.compatskills.Requirement.addRequirement(<spartanweaponry:arrow_explosive>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
 mods.compatskills.Requirement.addRequirement(<spartanweaponry:bolt>, "and|[reskillable:attack|8]~[trait|compatskills:archery]");
 mods.compatskills.Requirement.addRequirement(<spartanweaponry:bolt_diamond>, "and|[reskillable:attack|16]~[trait|compatskills:archery]");
