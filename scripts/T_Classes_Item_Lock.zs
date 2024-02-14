@@ -2264,18 +2264,6 @@ for item in tcv2{
 
 mods.compatskills.Requirement.addRequirement(<thaumcraft:voidseer_charm>, "and|[trait|compatskills:vthaum]~[reskillable:magic|20]");
 
-val tcbp= [
-<xat:dwarf_stout>,
-<xat:fairy_dew>,
-<xat:titan_spirit>,
-<xat:fairy_ring>,
-<xat:dwarf_ring>,
-<xat:titan_ring>
- ] as IItemStack[];
-
-for item in tcbp{
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:baubleplus]~[reskillable:magic|32]");
-}
 
 val tcv3= [
 <thaumicaugmentation:void_boots>,
