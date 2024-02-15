@@ -16,8 +16,9 @@ spells.setRankIcon(2, "minecraft:textures/spells1.png");
 spells.setRankIcon(4, "minecraft:textures/spells3.png");
 spells.setRankIcon(6, "minecraft:textures/spells2.png");
 spells.setRankIcon(8, "minecraft:textures/spells4.png");
-spells.setLevelStaggering("1|1");
-spells.setSkillPointInterval(10);
+spells.setLevelStaggering(["1|10"]);
+spells.setSkillPointInterval(1);
+#mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:spells>, 1, "trait|compatskills:mage");
 
 
 #Spells
@@ -60,7 +61,7 @@ val m_mas_10=mods.compatskills.TraitCreator.createTrait("i4magic", 1, 1, "compat
 m_mas_10.name = "Master ice elemental magic";
 m_mas_10.description = "Allow casting master tier elemental spells";
 m_mas_10.icon= "ebwizardry:textures/items/wand_master_ice.png";
-val m_mas_11=mods.compatskills.TraitCreator.createTrait("l4magic", 1, 2, "compatskills:spells", 3, "trait|compatskills:mage");
+val m_mas_11=mods.compatskills.TraitCreator.createTrait("t4magic", 1, 2, "compatskills:spells", 3, "trait|compatskills:mage");
 m_mas_11.name = "Master thunder elemental magic";
 m_mas_11.description = "Allow casting master tier elemental spells";
 m_mas_11.icon= "ebwizardry:textures/items/wand_master_lightning.png";
@@ -243,63 +244,82 @@ for item in spell3 {
     mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:mage]~[reskillable:magic|24]");
 }
 
-#apperience
-val spellape= [
-<ebwizardry:spell_book:117>,
-<ebwizardry:wizard_boots_earth>,
+val mage_items_fire= [
+    <ebwizardry:apprentice_fire_wand>,
+    <ebwizardry:wizard_boots_fire>,
+    <ebwizardry:wizard_leggings_fire>,
+    <ebwizardry:wizard_robe_fire>,
+    <ebwizardry:wizard_hat_fire>,
+    <ebwizardry:spell_book:15>,
+    <ebwizardry:spell_book:13>,
+    <ebwizardry:spell_book:14>,
+    <ebwizardry:spell_book:16>,
+    <ebwizardry:spell_book:114>,
+    <ebwizardry:spell_book:17>
+] as IItemStack[];
+
+for item in mage_items_fire {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:f3magic]~[trait|compatskills:f4magic]|]");
+}
+
+val mage_items_ice= [
+<ebwizardry:apprentice_ice_wand>,
+<ebwizardry:wizard_boots_ice>,
+<ebwizardry:wizard_leggings_ice>,
+<ebwizardry:wizard_robe_ice>,
+<ebwizardry:wizard_hat_ice>,
+<ebwizardry:spell_book:20>,
+<ebwizardry:spell_book:19>,
+<ebwizardry:spell_book:18>,
+<ebwizardry:spell_book:21>,
+<ebwizardry:spell_book:22>,
+<ebwizardry:spell_book:146>,
+<ebwizardry:spell_book:173>
+
+] as IItemStack[];
+
+for item in mage_items_ice {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:i3magic]~[trait|compatskills:i4magic]|]");
+}
+
+val mage_items_thunder= [
 <ebwizardry:wizard_hat_lightning>,
 <ebwizardry:wizard_robe_lightning>,
 <ebwizardry:apprentice_lightning_wand>,
 <ebwizardry:wizard_boots_lightning>,
 <ebwizardry:wizard_leggings_lightning>,
-<ebwizardry:apprentice_ice_wand>,
-<ebwizardry:apprentice_earth_wand>,
+<ebwizardry:spell_book:27>,
+<ebwizardry:spell_book:23>,
 <ebwizardry:spell_book:26>,
 <ebwizardry:spell_book:25>,
 <ebwizardry:spell_book:24>,
+<ebwizardry:spell_book:147>,
+<ebwizardry:spell_book:174>
+] as IItemStack[];
+
+for item in mage_items_thunder {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:t3magic]~[trait|compatskills:t4magic]|]");
+}
+
+val mage_items_earth= [
+<ebwizardry:wizard_boots_earth>,
+<ebwizardry:apprentice_earth_wand>,
+<ebwizardry:wizard_hat_earth>,
+<ebwizardry:wizard_robe_earth>,
+<ebwizardry:wizard_leggings_earth>,
 <ebwizardry:spell_book:32>,
 <ebwizardry:spell_book:35>,
 <ebwizardry:spell_book:34>,
 <ebwizardry:spell_book:36>,
-<ebwizardry:spell_book:37>,
-<ebwizardry:spell_book:118>,
 <ebwizardry:spell_book:33>,
 <ebwizardry:spell_book:149>,
-<ebwizardry:apprentice_fire_wand>,
-<ebwizardry:wizard_boots_ice>,
-<ebwizardry:wizard_leggings_ice>,
-<ebwizardry:wizard_robe_ice>,
-<ebwizardry:wizard_hat_ice>,
-<ebwizardry:wizard_boots_fire>,
-<ebwizardry:wizard_leggings_fire>,
-<ebwizardry:wizard_robe_fire>,
-<ebwizardry:wizard_hat_fire>,
-<ebwizardry:wizard_hat_earth>,
-<ebwizardry:wizard_robe_earth>,
-<ebwizardry:wizard_leggings_earth>,
-<ebwizardry:spell_book:15>,
-<ebwizardry:spell_book:13>,
-<ebwizardry:spell_book:14>,
-<ebwizardry:spell_book:20>,
-<ebwizardry:spell_book:19>,
-<ebwizardry:spell_book:18>,
-<ebwizardry:spell_book:147>,
-<ebwizardry:spell_book:27>,
-<ebwizardry:spell_book:23>,
-<ebwizardry:spell_book:21>,
-<ebwizardry:spell_book:22>,
-<ebwizardry:spell_book:146>,
-<ebwizardry:spell_book:16>,
-<ebwizardry:spell_book:114>,
-<ebwizardry:spell_book:17>,
-<ebwizardry:spell_book:173>,
-<ebwizardry:spell_book:174>
+<ebwizardry:spell_book:117>,
+<ebwizardry:spell_book:37>,
+<ebwizardry:spell_book:118>
+] as IItemStack[];
 
-
- ] as IItemStack[];
-
-for item in spellape {
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:e2magic]~[reskillable:magic|16]");
+for item in mage_items_earth {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:e3magic]~[trait|compatskills:e4magic]|]");
 }
 
 val spellapn= [
@@ -319,7 +339,7 @@ val spellapn= [
  ] as IItemStack[];
 
 for item in spellapn {
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:n2magic]~[reskillable:magic|16]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:n3magic]~[trait|compatskills:n4magic]|]");
 }
 
 val spellaph= [
@@ -340,7 +360,7 @@ val spellaph= [
  ] as IItemStack[];
 
 for item in spellaph {
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:h2magic]~[reskillable:magic|16]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:h3magic]~[trait|compatskills:h4magic]|]");
 }
 
 val spellaps= [
@@ -362,19 +382,23 @@ val spellaps= [
  ] as IItemStack[];
 
 for item in spellaps {
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:s2magic]~[reskillable:magic|16]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:s3magic]~[trait|compatskills:s4magic]|]");
 }
-#advanced
-val spellade= [
-<ebwizardry:spell_book:76>,
-<ebwizardry:spell_book:131>,
-<ebwizardry:spell_book:72>,
-<ebwizardry:spell_book:77>,
-<ebwizardry:spell_book:73>,
-<ebwizardry:spell_book:74>,
-<ebwizardry:spell_book:75>,
+
+val mage_items_fire_2= [
 <ebwizardry:advanced_fire_wand>,
-<ebwizardry:advanced_earth_wand>,
+<ebwizardry:warlock_hood_fire>,
+<ebwizardry:warlock_boots_fire>,
+<ebwizardry:warlock_leggings_fire>,
+<ebwizardry:warlock_robe_fire>,
+<ebwizardry:battlemage_boots_fire>,
+<ebwizardry:battlemage_leggings_fire>,
+<ebwizardry:battlemage_chestplate_fire>,
+<ebwizardry:battlemage_helmet_fire>,
+<ebwizardry:sage_boots_fire>,
+<ebwizardry:sage_leggings_fire>,
+<ebwizardry:sage_robe_fire>,
+<ebwizardry:sage_hat_fire>,
 <ebwizardry:spell_book:153>,
 <ebwizardry:spell_book:48>,
 <ebwizardry:spell_book:124>,
@@ -383,27 +407,16 @@ val spellade= [
 <ebwizardry:spell_book:52>,
 <ebwizardry:spell_book:125>,
 <ebwizardry:spell_book:49>,
-<ebwizardry:spell_book:58>,
-<ebwizardry:spell_book:128>,
-<ebwizardry:spell_book:126>,
-<ebwizardry:spell_book:56>,
-<ebwizardry:spell_book:54>,
-<ebwizardry:spell_book:57>,
-<ebwizardry:spell_book:154>,
-<ebwizardry:spell_book:55>,
-<ebwizardry:spell_book:129>,
-<ebwizardry:spell_book:62>,
-<ebwizardry:spell_book:59>,
-<ebwizardry:spell_book:64>,
-<ebwizardry:spell_book:61>,
-<ebwizardry:spell_book:63>,
-<ebwizardry:spell_book:155>,
-<ebwizardry:spell_book:60>,
-<ebwizardry:spell_book:127>,
-<ebwizardry:advanced_lightning_wand>,
-<ebwizardry:advanced_ice_wand>,
 <ebwizardry:spell_book:51>,
-<ebwizardry:spell_book:53>,
+<ebwizardry:spell_book:53>
+] as IItemStack[];
+
+for item in spellaps {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:f3magic]~[trait|compatskills:f4magic]|]");
+}
+
+val mage_items_ice_2= [
+<ebwizardry:advanced_ice_wand>,
 <ebwizardry:warlock_hood_ice>,
 <ebwizardry:warlock_leggings_ice>,
 <ebwizardry:sage_hat_ice>,
@@ -416,27 +429,24 @@ val spellade= [
 <ebwizardry:sage_boots_ice>,
 <ebwizardry:battlemage_chestplate_ice>,
 <ebwizardry:battlemage_boots_ice>,
-<ebwizardry:warlock_hood_fire>,
-<ebwizardry:battlemage_boots_fire>,
-<ebwizardry:battlemage_leggings_fire>,
-<ebwizardry:battlemage_chestplate_fire>,
-<ebwizardry:battlemage_helmet_fire>,
-<ebwizardry:sage_boots_fire>,
-<ebwizardry:sage_leggings_fire>,
-<ebwizardry:sage_robe_fire>,
-<ebwizardry:sage_hat_fire>,
-<ebwizardry:warlock_boots_earth>,
-<ebwizardry:warlock_leggings_earth>,
-<ebwizardry:warlock_robe_earth>,
-<ebwizardry:warlock_hood_earth>,
-<ebwizardry:battlemage_boots_earth>,
-<ebwizardry:battlemage_leggings_earth>,
-<ebwizardry:battlemage_chestplate_earth>,
-<ebwizardry:battlemage_helmet_earth>,
-<ebwizardry:sage_boots_earth>,
-<ebwizardry:sage_leggings_earth>,
-<ebwizardry:sage_robe_earth>,
-<ebwizardry:sage_hat_earth>,
+<ebwizardry:spell_book:58>,
+<ebwizardry:spell_book:128>,
+<ebwizardry:spell_book:126>,
+<ebwizardry:spell_book:56>,
+<ebwizardry:spell_book:54>,
+<ebwizardry:spell_book:57>,
+<ebwizardry:spell_book:154>,
+<ebwizardry:spell_book:55>,
+<ebwizardry:spell_book:127>,
+<ebwizardry:spell_book:177>
+] as IItemStack[];
+
+for item in spellaps {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:i3magic]~[trait|compatskills:i4magic]|]");
+}
+
+
+val mage_items_thunder_2= [
 <ebwizardry:warlock_boots_lightning>,
 <ebwizardry:warlock_leggings_lightning>,
 <ebwizardry:warlock_robe_lightning>,
@@ -449,17 +459,49 @@ val spellade= [
 <ebwizardry:sage_leggings_lightning>,
 <ebwizardry:sage_robe_lightning>,
 <ebwizardry:sage_hat_lightning>,
-<ebwizardry:warlock_boots_fire>,
-<ebwizardry:warlock_leggings_fire>,
-<ebwizardry:warlock_robe_fire>,
-<ebwizardry:spell_book:180>,
-<ebwizardry:spell_book:178>,
-<ebwizardry:spell_book:177>
+<ebwizardry:advanced_lightning_wand>,
+<ebwizardry:spell_book:129>,
+<ebwizardry:spell_book:62>,
+<ebwizardry:spell_book:59>,
+<ebwizardry:spell_book:64>,
+<ebwizardry:spell_book:61>,
+<ebwizardry:spell_book:63>,
+<ebwizardry:spell_book:155>,
+<ebwizardry:spell_book:60>,
+<ebwizardry:spell_book:178>
+] as IItemStack[];
 
+for item in spellaps {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:t3magic]~[trait|compatskills:t4magic]|]");
+}
+
+#advanced
+val mage_items_earth_2= [
+<ebwizardry:spell_book:76>,
+<ebwizardry:spell_book:131>,
+<ebwizardry:spell_book:72>,
+<ebwizardry:spell_book:77>,
+<ebwizardry:spell_book:73>,
+<ebwizardry:spell_book:74>,
+<ebwizardry:spell_book:75>,
+<ebwizardry:advanced_earth_wand>,
+<ebwizardry:warlock_boots_earth>,
+<ebwizardry:warlock_leggings_earth>,
+<ebwizardry:warlock_robe_earth>,
+<ebwizardry:warlock_hood_earth>,
+<ebwizardry:battlemage_boots_earth>,
+<ebwizardry:battlemage_leggings_earth>,
+<ebwizardry:battlemage_chestplate_earth>,
+<ebwizardry:battlemage_helmet_earth>,
+<ebwizardry:sage_boots_earth>,
+<ebwizardry:sage_leggings_earth>,
+<ebwizardry:sage_robe_earth>,
+<ebwizardry:sage_hat_earth>,
+<ebwizardry:spell_book:180>
  ] as IItemStack[];
 
-for item in spellade {
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:e3magic]~[reskillable:magic|24]");
+for item in mage_items_earth_2 {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:e3magic]~[trait|compatskills:e4magic]|]");
 }
 
 
@@ -493,7 +535,7 @@ val spelladn= [
  ] as IItemStack[];
 
 for item in spelladn {
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:n3magic]~[reskillable:magic|24]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:n3magic]~[trait|compatskills:n4magic]|]");
 }
 
 val spelladh= [
@@ -527,7 +569,7 @@ val spelladh= [
  ] as IItemStack[];
 
 for item in spelladh {
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:h3magic]~[reskillable:magic|24]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:h3magic]~[trait|compatskills:h4magic]|]");
 }
 
 val spellads= [
@@ -562,7 +604,7 @@ val spellads= [
  ] as IItemStack[];
 
 for item in spellads {
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:s3magic]~[reskillable:magic|24]");
+    mods.compatskills.Requirement.addRequirement(item,"and|[reskillable:magic|24]~[or|[trait|compatskills:s3magic]~[trait|compatskills:s4magic]|]");
 }
 
 #master
@@ -601,7 +643,7 @@ val spellal= [
  ] as IItemStack[];
 
 for item in spellal {
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:l4magic]~[reskillable:magic|32]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:t4magic]~[reskillable:magic|32]");
 }
 
 val spellae= [
