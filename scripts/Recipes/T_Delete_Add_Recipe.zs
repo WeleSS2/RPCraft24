@@ -42,8 +42,20 @@ val itemtodelete= [
 <bountifulbaubles:magicmirror>,
 <firstaid:morphine>,
 <firstaid:plaster>,
-<firstaid:bandage>
-
+<firstaid:bandage>,
+<mujmajnkraftsbettersurvival:itemwooddagger>,
+<mujmajnkraftsbettersurvival:itemstonedagger>,
+<mujmajnkraftsbettersurvival:itemirondagger>,
+<mujmajnkraftsbettersurvival:itemdiamonddagger>,
+<mujmajnkraftsbettersurvival:itemgolddagger>,
+<mujmajnkraftsbettersurvival:itembronzedagger>,
+<mujmajnkraftsbettersurvival:itemsteeldagger>,
+<mujmajnkraftsbettersurvival:itemsilverdagger>,
+<mujmajnkraftsbettersurvival:itemdragonbonedagger>,
+<mujmajnkraftsbettersurvival:itemfiredragonbonedagger>,
+<mujmajnkraftsbettersurvival:itemicedragonbonedagger>,
+<mujmajnkraftsbettersurvival:itemjunglechitindagger>,
+<mujmajnkraftsbettersurvival:itemdesertchitindagger>
  ] as IItemStack[];
 /*
 
