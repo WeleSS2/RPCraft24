@@ -259,7 +259,7 @@ val mage_items_fire= [
 ] as IItemStack[];
 
 for item in mage_items_fire {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:f3magic]~[trait|compatskills:f4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:f3magic]~[trait|compatskills:f4magic]]");
 }
 
 val mage_items_ice= [
@@ -279,7 +279,7 @@ val mage_items_ice= [
 ] as IItemStack[];
 
 for item in mage_items_ice {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:i3magic]~[trait|compatskills:i4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:i3magic]~[trait|compatskills:i4magic]]");
 }
 
 val mage_items_thunder= [
@@ -298,7 +298,7 @@ val mage_items_thunder= [
 ] as IItemStack[];
 
 for item in mage_items_thunder {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:t3magic]~[trait|compatskills:t4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:t3magic]~[trait|compatskills:t4magic]]");
 }
 
 val mage_items_earth= [
@@ -319,7 +319,7 @@ val mage_items_earth= [
 ] as IItemStack[];
 
 for item in mage_items_earth {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:e3magic]~[trait|compatskills:e4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:e3magic]~[trait|compatskills:e4magic]]");
 }
 
 val spellapn= [
@@ -339,7 +339,7 @@ val spellapn= [
  ] as IItemStack[];
 
 for item in spellapn {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:n3magic]~[trait|compatskills:n4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:n3magic]~[trait|compatskills:n4magic]]");
 }
 
 val spellaph= [
@@ -360,7 +360,7 @@ val spellaph= [
  ] as IItemStack[];
 
 for item in spellaph {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:h3magic]~[trait|compatskills:h4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:h3magic]~[trait|compatskills:h4magic]]");
 }
 
 val spellaps= [
@@ -382,7 +382,7 @@ val spellaps= [
  ] as IItemStack[];
 
 for item in spellaps {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:s3magic]~[trait|compatskills:s4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[or|[trait|compatskills:s3magic]~[trait|compatskills:s4magic]]");
 }
 
 val mage_items_fire_2= [
@@ -411,8 +411,8 @@ val mage_items_fire_2= [
 <ebwizardry:spell_book:53>
 ] as IItemStack[];
 
-for item in spellaps {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:f3magic]~[trait|compatskills:f4magic]|]");
+for item in mage_items_fire_2 {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:f3magic]~[trait|compatskills:f4magic]]");
 }
 
 val mage_items_ice_2= [
@@ -441,8 +441,8 @@ val mage_items_ice_2= [
 <ebwizardry:spell_book:177>
 ] as IItemStack[];
 
-for item in spellaps {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:i3magic]~[trait|compatskills:i4magic]|]");
+for item in mage_items_ice_2 {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:i3magic]~[trait|compatskills:i4magic]]");
 }
 
 
@@ -471,8 +471,8 @@ val mage_items_thunder_2= [
 <ebwizardry:spell_book:178>
 ] as IItemStack[];
 
-for item in spellaps {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:t3magic]~[trait|compatskills:t4magic]|]");
+for item in mage_items_thunder_2 {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:t3magic]~[trait|compatskills:t4magic]]");
 }
 
 #advanced
@@ -501,7 +501,7 @@ val mage_items_earth_2= [
  ] as IItemStack[];
 
 for item in mage_items_earth_2 {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:e3magic]~[trait|compatskills:e4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:e3magic]~[trait|compatskills:e4magic]]");
 }
 
 
@@ -535,7 +535,7 @@ val spelladn= [
  ] as IItemStack[];
 
 for item in spelladn {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:n3magic]~[trait|compatskills:n4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:n3magic]~[trait|compatskills:n4magic]]");
 }
 
 val spelladh= [
@@ -569,7 +569,7 @@ val spelladh= [
  ] as IItemStack[];
 
 for item in spelladh {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:h3magic]~[trait|compatskills:h4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[or|[trait|compatskills:h3magic]~[trait|compatskills:h4magic]]");
 }
 
 val spellads= [
@@ -604,7 +604,7 @@ val spellads= [
  ] as IItemStack[];
 
 for item in spellads {
-    mods.compatskills.Requirement.addRequirement(item,"and|[reskillable:magic|24]~[or|[trait|compatskills:s3magic]~[trait|compatskills:s4magic]|]");
+    mods.compatskills.Requirement.addRequirement(item,"and|[reskillable:magic|24]~[or|[trait|compatskills:s3magic]~[trait|compatskills:s4magic]]");
 }
 
 #master
