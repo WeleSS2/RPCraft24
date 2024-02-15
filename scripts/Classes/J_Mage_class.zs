@@ -1,3 +1,5 @@
+#priority -10
+
 import mods.compatskills.SkillCreator.createSkill;
 import mods.compatskills.Skill;
 import crafttweaker.item.IItemStack as IItemStack;
