@@ -10,14 +10,14 @@ spells.name="Spells";
 spells.setRankIcon(0, "minecraft:textures/items/iron_ingot.png");
 spells.setEnabled(true);
 spells.setBaseLevelCost(0);
-spells.setLevelCap(32);
+spells.setLevelCap(5);
 spells.setRankIcon(0, "minecraft:textures/spells0.png");
 spells.setRankIcon(2, "minecraft:textures/spells1.png");
 spells.setRankIcon(4, "minecraft:textures/spells3.png");
 spells.setRankIcon(6, "minecraft:textures/spells2.png");
 spells.setRankIcon(8, "minecraft:textures/spells4.png");
-spells.setLevelStaggering(["1|1","10|2"]);
-spells.setSkillPointInterval(1);
+spells.setLevelStaggering("1|1");
+spells.setSkillPointInterval(10);
 
 
 #Spells
@@ -52,31 +52,31 @@ m_adv_8.description = "Allow casting advanced tier necronamcy spells";
 m_adv_8.icon= "ebwizardry:textures/items/wand_advanced_necromancy.png";
 
 #Master
-val m_mas_9=mods.compatskills.TraitCreator.createTrait("f4magic", 1, 0, "compatskills:spells", 1, "trait|compatskills:mage");
+val m_mas_9=mods.compatskills.TraitCreator.createTrait("f4magic", 1, 0, "compatskills:spells", 3, "trait|compatskills:mage");
 m_mas_9.name = "Master fire elemental magic";
 m_mas_9.description = "Allow casting master tier elemental spells";
 m_mas_9.icon= "ebwizardry:textures/items/wand_master_fire.png";
-val m_mas_10=mods.compatskills.TraitCreator.createTrait("i4magic", 1, 1, "compatskills:spells", 1, "trait|compatskills:mage");
+val m_mas_10=mods.compatskills.TraitCreator.createTrait("i4magic", 1, 1, "compatskills:spells", 3, "trait|compatskills:mage");
 m_mas_10.name = "Master ice elemental magic";
 m_mas_10.description = "Allow casting master tier elemental spells";
 m_mas_10.icon= "ebwizardry:textures/items/wand_master_ice.png";
-val m_mas_11=mods.compatskills.TraitCreator.createTrait("l4magic", 1, 2, "compatskills:spells", 1, "trait|compatskills:mage");
+val m_mas_11=mods.compatskills.TraitCreator.createTrait("l4magic", 1, 2, "compatskills:spells", 3, "trait|compatskills:mage");
 m_mas_11.name = "Master thunder elemental magic";
 m_mas_11.description = "Allow casting master tier elemental spells";
 m_mas_11.icon= "ebwizardry:textures/items/wand_master_lightning.png";
-val m_mas_12=mods.compatskills.TraitCreator.createTrait("e4magic", 1, 3, "compatskills:spells", 1, "trait|compatskills:mage");
+val m_mas_12=mods.compatskills.TraitCreator.createTrait("e4magic", 1, 3, "compatskills:spells", 3, "trait|compatskills:mage");
 m_mas_12.name = "Master earth elemental magic";
 m_mas_12.description = "Allow casting master tier elemental spells";
 m_mas_12.icon= "ebwizardry:textures/items/wand_master_earth.png";
-val m_mas_13=mods.compatskills.TraitCreator.createTrait("h4magic", 3, 0, "compatskills:spells", 1, "trait|compatskills:mage");
+val m_mas_13=mods.compatskills.TraitCreator.createTrait("h4magic", 3, 0, "compatskills:spells", 3, "trait|compatskills:mage");
 m_mas_13.name = "Master healing magic";
 m_mas_13.description = "Allow casting master tier healing spells";
 m_mas_13.icon= "ebwizardry:textures/items/wand_master_healing.png";
-val m_mas_14=mods.compatskills.TraitCreator.createTrait("s4magic", 3, 1, "compatskills:spells", 1, "trait|compatskills:mage");
+val m_mas_14=mods.compatskills.TraitCreator.createTrait("s4magic", 3, 1, "compatskills:spells", 3, "trait|compatskills:mage");
 m_mas_14.name = "Master sorcery magic";
 m_mas_14.description = "Allow casting master tier sorcery spells";
 m_mas_14.icon= "ebwizardry:textures/items/wand_master_sorcery.png";
-val m_mas_15=mods.compatskills.TraitCreator.createTrait("n4magic", 3, 2, "compatskills:spells", 1, "trait|compatskills:mage");
+val m_mas_15=mods.compatskills.TraitCreator.createTrait("n4magic", 3, 2, "compatskills:spells", 3, "trait|compatskills:mage");
 m_mas_15.name = "Master necromancy magic";
 m_mas_15.description = "Allow casting master tier necronamcy spells";
 m_mas_15.icon= "ebwizardry:textures/items/wand_master_necromancy.png";
