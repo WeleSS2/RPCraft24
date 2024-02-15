@@ -4,12 +4,6 @@ import mods.compatskills.SkillCreator.createSkill;
 import mods.compatskills.Skill;
 import crafttweaker.item.IItemStack as IItemStack;
 
-#Some changes
-<skill:reskillable:building>.setEnabled(false);
-<skill:reskillable:gathering>.setEnabled(false);
-<skill:reskillable:mining>.setEnabled(false);
-<skill:reskillable:farming>.setEnabled(false);
-
 #Classes tab
 val class=mods.compatskills.SkillCreator.createSkill("classes", "textures/blocks/stonebrick.png");
 class.name="Classes";
