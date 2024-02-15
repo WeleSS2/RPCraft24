@@ -28,6 +28,11 @@ Shield.name = "Shield user";
 Shield.description = "Shield specjalist - allow to use shields.";
 Shield.icon = "reskillable:textures/shield_specjalisation.png";
 
+val MagicKnight = mods.compatskills.TraitCreator.createTrait("hybridm", 2, 0, "compatskills:warrior", 1);
+MagicKnight.name = "Magic knight";
+MagicKnight.description = "Hybrid of warrior and mage - allow using some spells.";
+MagicKnight.icon = "reskillable:textures/magic_knight.png";
+
 #Skills
 
 #Weapons specialisation
