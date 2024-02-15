@@ -5,7 +5,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 #Beastmaster tab
 val warrior=mods.compatskills.SkillCreator.createSkill("hunter", "textures/blocks/stonebrick.png");
 warrior.name="Beastmaster";
-warrior.setRankIcon(0, "reskillable:textures/tamer.png");
+warrior.setRankIcon(0, "reskillable:textures/beastmaster.png");
 warrior.setEnabled(true);
 warrior.setBaseLevelCost(0);
 warrior.setLevelCap(10);
