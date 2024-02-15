@@ -426,6 +426,8 @@ val itemt3 = [
 <minecraft:diamond_pickaxe>,
 <minecraft:diamond_axe>,
 <minecraft:diamond_shovel>,
+<fishingmadebetter:fillet_knife_diamond>,
+<fishingmadebetter:scaling_knife_diamond>,
 <notreepunching:knife/diamond>,
 <notreepunching:mattock/diamond>,
 <notreepunching:saw/diamond>,
@@ -650,6 +652,16 @@ for item in item_drag_1 {
 
 val item1bone = [
 <endreborn:ender_sword>,
+<defiledlands:scarlite_reaver>,
+<defiledlands:scarlite_razor>,
+<srparasites:weapon_scythe>,
+<srparasites:weapon_scythe_sentient>,
+<srparasites:weapon_axe>,
+<srparasites:weapon_axe_sentient>,
+<srparasites:weapon_sword>,
+<srparasites:weapon_sword_sentient>,
+<srparasites:weapon_cleaver>,
+<srparasites:weapon_cleaver_sentient>,
 <spartanfire:greatsword_fire_dragonbone>,
 <spartanfire:rapier_fire_dragonbone>,
 <spartanfire:katana_fire_dragonbone>,
@@ -2252,18 +2264,6 @@ for item in tcv2{
 
 mods.compatskills.Requirement.addRequirement(<thaumcraft:voidseer_charm>, "and|[trait|compatskills:vthaum]~[reskillable:magic|20]");
 
-val tcbp= [
-<xat:dwarf_stout>,
-<xat:fairy_dew>,
-<xat:titan_spirit>,
-<xat:fairy_ring>,
-<xat:dwarf_ring>,
-<xat:titan_ring>
- ] as IItemStack[];
-
-for item in tcbp{
-    mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:baubleplus]~[reskillable:magic|32]");
-}
 
 val tcv3= [
 <thaumicaugmentation:void_boots>,
