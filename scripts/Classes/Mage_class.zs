@@ -82,6 +82,20 @@ m_mas_15.name = "Master necromancy magic";
 m_mas_15.description = "Allow casting master tier necronamcy spells";
 m_mas_15.icon= "ebwizardry:textures/items/wand_master_necromancy.png";
 
+# PERKS
+
+
+
+
+
+
+
+
+
+
+# ITEM LOCKS
+
+
 mods.compatskills.Requirement.addRequirement(<ebwizardry:arcane_workbench>, "or|[trait|compatskills:mage]~[trait|compatskills:hybridm]");
 mods.compatskills.Requirement.addRequirement(<ebwizardry:magic_wand>, "or|[trait|compatskills:mage]~[trait|compatskills:hybridm]");
 
