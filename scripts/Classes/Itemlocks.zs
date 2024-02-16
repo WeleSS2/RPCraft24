@@ -207,7 +207,7 @@ val melee_lances = [
 <spartanfire:lance_jungle_venom>
 ] as IItemStack[];
 
-for item in item1bone {
+for item in melee_lances {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|16]~[or|[trait|compatskills:husar]~[trait|compatskills:sword]]");
 }
 
