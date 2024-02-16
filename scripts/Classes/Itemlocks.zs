@@ -1,86 +1,9 @@
+#priority -1
+
 import mods.compatskills.SkillCreator.createSkill;
 import mods.compatskills.Skill;
 import crafttweaker.item.IItemStack as IItemStack;
 
-#Tools tab (sum farming, mining, gathering and building)
-val tools=mods.compatskills.SkillCreator.createSkill("tools", "textures/blocks/stonebrick.png");
-tools.name="Tools";
-tools.setRankIcon(0, "minecraft:textures/items/wood_pickaxe.png");
-tools.setRankIcon(1, "minecraft:textures/items/stone_pickaxe.png");
-tools.setRankIcon(2, "minecraft:textures/items/iron_pickaxe.png");
-tools.setRankIcon(4, "minecraft:textures/items/diamond_pickaxe.png");
-tools.setRankIcon(6, "iceandfire:textures/items/dragonsteel_fire_pickaxe.png");
-tools.setEnabled(true);
-tools.setBaseLevelCost(0);
-tools.setLevelCap(32);
-tools.setLevelStaggering(["1|1"]);
-tools.setSkillPointInterval(1);
-
-val bas1=mods.compatskills.TraitCreator.createTrait("stoneminer", 2, 0, "compatskills:tools", 2, "trait|compatskills:stone_bas");
-bas1.name = "Stone Warrior";
-bas1.description = "Everything here will be soon ready, but not now.";
-bas1.icon= "minecraft:textures/blocks/stone.png";
-#val gam1=mods.compatskills.TraitCreator.createTrait("Coal", 1, 0, "compatskills:tools", 1, "trait|compatskills:coal");
-#gam1.name = "";
-#gam1.description = "";
-#gam1.icon= "minecraft:textures/items/.png";
-
-
-
-
-
-/*
-#gunner
-val engineer=mods.compatskills.SkillCreator.createSkill("Enginger", "textures/blocks/stonebrick.png");
-engineer.name="Engineer";
-engineer.setRankIcon(0, "minecraft:textures/items/repeater.png");
-engineer.setEnabled(true);
-engineer.setBaseLevelCost(0);
-engineer.setLevelCap(10);
-engineer.setLevelStaggering(["1|7"]);
-engineer.setSkillPointInterval(1);
-
-
-val t1_guns=mods.compatskills.TraitCreator.createTrait("guns_t1", 0, 0, "compatskills:Enginger", 2, "trait|compatskills:tech" );
-t1_guns.name = "Basic guns";
-t1_guns.description = "I did it! I created a working guns!";
-t1_guns.icon= "minecraft:textures/t1.png";
-val t2_guns=mods.compatskills.TraitCreator.createTrait("guns_t2", 0, 1, "compatskills:Enginger", 2, "trait|compatskills:guns_t1" );
-t2_guns.name = "Sniper Rifle?";
-t2_guns.description = "After tests i know what i need to make a better guns, netherite";
-t2_guns.icon= "minecraft:textures/sniper.png";
-val t3_guns=mods.compatskills.TraitCreator.createTrait("guns_t3", 0, 2, "compatskills:Enginger", 2, "trait|compatskills:guns_t2" );
-t3_guns.name = "Upgrade everythnig!";
-t3_guns.description = "Give me a good source of power, and i'll build much stronger guns!";
-t3_guns.icon= "minecraft:textures/t3.png";
-val t4_guns=mods.compatskills.TraitCreator.createTrait("guns_t4", 0, 3, "compatskills:Enginger", 2, "trait|compatskills:guns_t3" );
-t4_guns.name = "Incredible";
-t4_guns.description = "With dragon steel i can build everything!";
-t4_guns.icon= "minecraft:textures/t4g.png";
-val t4_bom_guns=mods.compatskills.TraitCreator.createTrait("guns_t4_bom", 1, 3, "compatskills:Enginger", 2, "trait|compatskills:guns_t4" );
-t4_bom_guns.name = "Bigger gun";
-t4_bom_guns.description = "Maybe i should build something bigger?";
-t4_bom_guns.icon= "minecraft:textures/t4b.png";
-
-val basic_machine=mods.compatskills.TraitCreator.createTrait("flying_machine_t1", 2, 0, "compatskills:Enginger", 2, "trait|compatskills:tech" );
-basic_machine.name = "It's working";
-basic_machine.description = "I don't know why, but that's work!";
-basic_machine.icon= "minecraft:textures/plane1.png";
-val advanced_machine=mods.compatskills.TraitCreator.createTrait("flying_machine_t2", 2, 1, "compatskills:Enginger", 4, "trait|compatskills:flying_machine_t1" );
-advanced_machine.name = "Improved Version";
-advanced_machine.description = "Now i can build someting much better!";
-advanced_machine.icon= "minecraft:textures/plane2.png";
-val ship_weapon_1=mods.compatskills.TraitCreator.createTrait("ship_weapon_t_1", 3, 1, "compatskills:Enginger", 2, "and|[trait|compatskills:tech]~[trait|compatskills:flying_machine_t2]" );
-ship_weapon_1.name = "Can i use it?";
-ship_weapon_1.description = "I can build a cannons on my flying ship";
-ship_weapon_1.icon= "minecraft:textures/cannon.png";
-
-#mods.compatskills.Requirement.addRequirement(IItemStack item, String... locked)
-#as IItemStack[];
-#as string[];
-
-*/
-/* */
 #Tools list
 val itemt1 = [
 <minecraft:stone_hoe>,
@@ -263,6 +186,7 @@ mods.compatskills.Requirement.addRequirement(<minecraft:enchanting_table>, "resk
 
 #Melee weapons
 val item1ad = [
+<spartanweaponry:dagger_diamond>,
 <spartanweaponry:longsword_diamond>,
 <spartanweaponry:katana_diamond>,
 <spartanweaponry:saber_diamond>,
@@ -276,6 +200,8 @@ val item1ad = [
 <spartanweaponry:halberd_diamond>,
 <mysticalworld:amethyst_knife>,
 <spartanweaponry:pike_diamond>,
+<spartanweaponry:lance_diamond>,
+<spartanweaponry:throwing_knife_diamond>,
 <spartanweaponry:throwing_axe_diamond>,
 <spartanweaponry:javelin_diamond>,
 <spartanweaponry:boomerang_diamond>,
@@ -307,18 +233,22 @@ val item_drag_1 = [
 <spartanfire:longsword_dragonbone>,
 <spartanfire:saber_dragonbone>,
 <spartanfire:rapier_dragonbone>,
+<spartanfire:dagger_dragonbone>,
 <spartanfire:spear_dragonbone>,
 <spartanfire:pike_dragonbone>,
+<spartanfire:lance_dragonbone>,
 <spartanfire:halberd_dragonbone>,
 <spartanfire:warhammer_dragonbone>,
 <spartanfire:hammer_dragonbone>,
 <spartanfire:throwing_axe_dragonbone>,
+<spartanfire:throwing_knife_dragonbone>,
 <spartanfire:javelin_dragonbone>,
 <spartanfire:battleaxe_dragonbone>,
 <spartanfire:boomerang_dragonbone>,
 <spartanfire:mace_dragonbone>,
 <spartanfire:staff_dragonbone>,
 <spartanfire:glaive_dragonbone>,
+<spartanweaponryarcana:dagger_voidmetal>,
 <spartanweaponryarcana:longsword_voidmetal>,
 <spartanweaponryarcana:katana_voidmetal>,
 <spartanweaponryarcana:saber_voidmetal>,
@@ -329,6 +259,8 @@ val item_drag_1 = [
 <spartanweaponryarcana:spear_voidmetal>,
 <spartanweaponryarcana:halberd_voidmetal>,
 <spartanweaponryarcana:pike_voidmetal>,
+<spartanweaponryarcana:lance_voidmetal>,
+<spartanweaponryarcana:throwing_knife_voidmetal>,
 <spartanweaponryarcana:throwing_axe_voidmetal>,
 <spartanweaponryarcana:javelin_voidmetal>,
 <spartanweaponryarcana:boomerang_voidmetal>,
@@ -336,6 +268,7 @@ val item_drag_1 = [
 <spartanweaponryarcana:mace_voidmetal>,
 <spartanweaponryarcana:glaive_voidmetal>,
 <spartanweaponryarcana:staff_voidmetal>,
+<spartanweaponryarcana:dagger_thaumium>,
 <spartanweaponryarcana:longsword_thaumium>,
 <spartanweaponryarcana:katana_thaumium>,
 <spartanweaponryarcana:saber_thaumium>,
@@ -346,6 +279,8 @@ val item_drag_1 = [
 <spartanweaponryarcana:spear_thaumium>,
 <spartanweaponryarcana:halberd_thaumium>,
 <spartanweaponryarcana:pike_thaumium>,
+<spartanweaponryarcana:lance_thaumium>,
+<spartanweaponryarcana:throwing_knife_thaumium>,
 <spartanweaponryarcana:throwing_axe_thaumium>,
 <spartanweaponryarcana:javelin_thaumium>,
 <spartanweaponryarcana:boomerang_thaumium>,
@@ -375,13 +310,16 @@ val item1bone = [
 <spartanfire:katana_fire_dragonbone>,
 <spartanfire:longsword_fire_dragonbone>,
 <spartanfire:saber_fire_dragonbone>,
+<spartanfire:dagger_fire_dragonbone>,
 <spartanfire:spear_fire_dragonbone>,
 <spartanfire:pike_fire_dragonbone>,
+<spartanfire:lance_fire_dragonbone>,
 <spartanfire:halberd_fire_dragonbone>,
 <spartanfire:warhammer_fire_dragonbone>,
 <spartanfire:hammer_fire_dragonbone>,
 <iceandfire:dragonbone_sword_fire>,
 <spartanfire:throwing_axe_fire_dragonbone>,
+<spartanfire:throwing_knife_fire_dragonbone>,
 <spartanfire:javelin_fire_dragonbone>,
 <spartanfire:battleaxe_fire_dragonbone>,
 <spartanfire:boomerang_fire_dragonbone>,
@@ -393,9 +331,12 @@ val item1bone = [
 <spartanfire:greatsword_ice_dragonbone>,
 <spartanfire:longsword_ice_dragonbone>,
 <spartanfire:saber_ice_dragonbone>,
+<spartanfire:throwing_knife_ice_dragonbone>,
 <spartanfire:rapier_ice_dragonbone>,
+<spartanfire:dagger_ice_dragonbone>,
 <spartanfire:spear_ice_dragonbone>,
 <spartanfire:pike_ice_dragonbone>,
+<spartanfire:lance_ice_dragonbone>,
 <spartanfire:halberd_ice_dragonbone>,
 <spartanfire:warhammer_ice_dragonbone>,
 <spartanfire:hammer_ice_dragonbone>,
@@ -485,6 +426,7 @@ for item in item1daa {
 
 val item43gold= [
 <minecraft:golden_sword>,
+<spartanweaponry:dagger_gold>,
 <spartanweaponry:longsword_gold>,
 <spartanweaponry:katana_gold>,
 <spartanweaponry:saber_gold>,
@@ -495,6 +437,8 @@ val item43gold= [
 <spartanweaponry:spear_gold>,
 <spartanweaponry:halberd_gold>,
 <spartanweaponry:pike_gold>,
+<spartanweaponry:lance_gold>,
+<spartanweaponry:throwing_knife_gold>,
 <spartanweaponry:throwing_axe_gold>,
 <spartanweaponry:javelin_gold>,
 <spartanweaponry:boomerang_gold>,
@@ -503,6 +447,7 @@ val item43gold= [
 <spartanweaponry:glaive_gold>,
 <spartanweaponry:staff_gold>,
 <iceandfire:silver_sword>,
+<spartanweaponry:dagger_silver>,
 <spartanweaponry:longsword_silver>,
 <spartanweaponry:katana_silver>,
 <spartanweaponry:saber_silver>,
@@ -513,6 +458,8 @@ val item43gold= [
 <spartanweaponry:halberd_silver>,
 <spartanweaponry:spear_silver>,
 <spartanweaponry:pike_silver>,
+<spartanweaponry:lance_silver>,
+<spartanweaponry:throwing_knife_silver>,
 <spartanweaponry:throwing_axe_silver>,
 <spartanweaponry:javelin_silver>,
 <spartanweaponry:boomerang_silver>,
@@ -534,6 +481,7 @@ val item2 = [
 <spartanweaponry:boomerang_stone>,
 <spartanweaponry:javelin_stone>,
 <spartanweaponry:throwing_axe_stone>,
+<spartanweaponry:throwing_knife_stone>,
 <minecraft:stone_sword>,
 <spartanweaponry:hammer_stone>,
 <spartanweaponry:greatsword_stone>,
@@ -541,6 +489,8 @@ val item2 = [
 <spartanweaponry:saber_stone>,
 <spartanweaponry:katana_stone>,
 <spartanweaponry:longsword_stone>,
+<spartanweaponry:dagger_stone>,
+<spartanweaponry:lance_stone>,
 <spartanweaponry:pike_stone>,
 <spartanweaponry:halberd_stone>,
 <spartanweaponry:warhammer_stone>
@@ -678,12 +628,15 @@ val steel_melee_all= [
 <spartanweaponry:boomerang_steel>,
 <spartanweaponry:javelin_steel>,
 <spartanweaponry:throwing_axe_steel>,
+<spartanweaponry:throwing_knife_steel>,
 <spartanweaponry:hammer_steel>,
 <spartanweaponry:greatsword_steel>,
 <spartanweaponry:rapier_steel>,
 <spartanweaponry:saber_steel>,
 <spartanweaponry:katana_steel>,
 <spartanweaponry:longsword_steel>,
+<spartanweaponry:dagger_steel>,
+<spartanweaponry:lance_steel>,
 <spartanweaponry:pike_steel>,
 <spartanweaponry:halberd_steel>,
 <spartanweaponry:warhammer_steel>,
@@ -779,72 +732,6 @@ for item in item4 {
     mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|4");
 }
 
-val item_lanc_1 = [
-<spartanweaponry:lance_diamond>,
-<spartanfire:lance_dragonbone>,
-<spartanweaponryarcana:lance_voidmetal>,
-<spartanweaponryarcana:lance_thaumium>,
-<spartanfire:lance_fire_dragonbone>,
-<spartanfire:lance_ice_dragonbone>,
-<spartanweaponry:lance_gold>,
-<spartanweaponry:lance_silver>,
-<spartanweaponry:lance_stone>,
-<spartanweaponry:lance_steel>,
-<spartanweaponry:lance_iron>,
-<spartanfire:lance_desert>,
-<spartanfire:lance_desert_venom>,
-<spartanfire:lance_jungle>,
-<spartanfire:lance_jungle_venom>
-] as IItemStack[];
-
-for item in item_lanc_1 {
-    mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|4");
-}
-
-val item_dag_1 = [
-<spartanweaponry:dagger_diamond>,
-<spartanfire:dagger_dragonbone>,
-<spartanweaponryarcana:dagger_voidmetal>,
-<spartanweaponryarcana:dagger_thaumium>,
-<spartanfire:dagger_fire_dragonbone>,
-<spartanfire:dagger_ice_dragonbone>,
-<spartanweaponry:dagger_gold>,
-<spartanweaponry:dagger_silver>,
-<spartanweaponry:dagger_stone>,
-<spartanweaponry:dagger_steel>,
-<spartanweaponry:dagger_iron>,
-<spartanfire:dagger_desert>,
-<spartanfire:dagger_desert_venom>,
-<spartanfire:dagger_jungle>,
-<spartanfire:dagger_jungle_venom>
-] as IItemStack[];
-
-for item in item_dag_1 {
-    mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|4");
-}
-
-val item_thk_1 = [
-<spartanweaponry:throwing_knife_diamond>,
-<spartanfire:throwing_knife_dragonbone>,
-<spartanweaponryarcana:throwing_knife_voidmetal>,
-<spartanweaponryarcana:throwing_knife_thaumium>,
-<spartanfire:throwing_knife_fire_dragonbone>,
-<spartanfire:throwing_knife_ice_dragonbone>,
-<spartanweaponry:throwing_knife_gold>,
-<spartanweaponry:throwing_knife_silver>,
-<spartanweaponry:throwing_knife_stone>,
-<spartanweaponry:throwing_knife_steel>,
-<spartanweaponry:throwing_knife_iron>,
-<spartanfire:throwing_knife_desert>,
-<spartanfire:throwing_knife_desert_venom>,
-<spartanfire:throwing_knife_jungle>,
-<spartanfire:throwing_knife_jungle_venom>
-] as IItemStack[];
-
-for item in item_thk_1 {
-    mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|4");
-}
-
 val item41= [
 <mysticalworld:copper_chestplate>,
 <mysticalworld:copper_helmet>,
@@ -911,6 +798,7 @@ val item5v = [
 <mysticalworld:copper_knife>,
 <mysticalworld:copper_sword>,
 <minecraft:iron_sword>,
+<spartanweaponry:dagger_iron>,
 <spartanweaponry:longsword_iron>,
 <spartanweaponry:katana_iron>,
 <spartanweaponry:saber_iron>,
@@ -921,6 +809,8 @@ val item5v = [
 <spartanweaponry:spear_iron>,
 <spartanweaponry:halberd_iron>,
 <spartanweaponry:pike_iron>,
+<spartanweaponry:lance_iron>,
+<spartanweaponry:throwing_knife_iron>,
 <spartanweaponry:throwing_axe_iron>,
 <spartanweaponry:javelin_iron>,
 <spartanweaponry:boomerang_iron>,
@@ -935,12 +825,15 @@ val item5v = [
 <spartanfire:longsword_desert>,
 <spartanfire:saber_desert>,
 <spartanfire:rapier_desert>,
+<spartanfire:dagger_desert>,
 <spartanfire:spear_desert>,
 <spartanfire:pike_desert>,
+<spartanfire:lance_desert>,
 <spartanfire:halberd_desert>,
 <spartanfire:warhammer_desert>,
 <spartanfire:hammer_desert>,
 <spartanfire:throwing_axe_desert>,
+<spartanfire:throwing_knife_desert>,
 <spartanfire:javelin_desert>,
 <spartanfire:battleaxe_desert>,
 <spartanfire:boomerang_desert>,
@@ -952,12 +845,15 @@ val item5v = [
 <spartanfire:longsword_desert_venom>,
 <spartanfire:saber_desert_venom>,
 <spartanfire:rapier_desert_venom>,
+<spartanfire:dagger_desert_venom>,
 <spartanfire:spear_desert_venom>,
 <spartanfire:pike_desert_venom>,
+<spartanfire:lance_desert_venom>,
 <spartanfire:halberd_desert_venom>,
 <spartanfire:warhammer_desert_venom>,
 <spartanfire:hammer_desert_venom>,
 <spartanfire:throwing_axe_desert_venom>,
+<spartanfire:throwing_knife_desert_venom>,
 <spartanfire:javelin_desert_venom>,
 <spartanfire:battleaxe_desert_venom>,
 <spartanfire:boomerang_desert_venom>,
@@ -971,12 +867,15 @@ val item5v = [
 <spartanfire:longsword_jungle>,
 <spartanfire:saber_jungle>,
 <spartanfire:rapier_jungle>,
+<spartanfire:dagger_jungle>,
 <spartanfire:spear_jungle>,
 <spartanfire:pike_jungle>,
+<spartanfire:lance_jungle>,
 <spartanfire:halberd_jungle>,
 <spartanfire:warhammer_jungle>,
 <spartanfire:hammer_jungle>,
 <spartanfire:throwing_axe_jungle>,
+<spartanfire:throwing_knife_jungle>,
 <spartanfire:javelin_jungle>,
 <spartanfire:battleaxe_jungle>,
 <spartanfire:boomerang_jungle>,
@@ -987,12 +886,15 @@ val item5v = [
 <spartanfire:longsword_jungle_venom>,
 <spartanfire:saber_jungle_venom>,
 <spartanfire:rapier_jungle_venom>,
+<spartanfire:dagger_jungle_venom>,
 <spartanfire:spear_jungle_venom>,
 <spartanfire:pike_jungle_venom>,
+<spartanfire:lance_jungle_venom>,
 <spartanfire:halberd_jungle_venom>,
 <spartanfire:warhammer_jungle_venom>,
 <spartanfire:hammer_jungle_venom>,
 <spartanfire:throwing_axe_jungle_venom>,
+<spartanfire:throwing_knife_jungle_venom>,
 <spartanfire:javelin_jungle_venom>,
 <spartanfire:battleaxe_jungle_venom>,
 <spartanfire:boomerang_jungle_venom>,
@@ -1551,15 +1453,9 @@ for item in gunner_4_bom {
 	mods.compatskills.Requirement.addRequirement(item, "trait|compatskills:guns_t4_bom");
 }
 
-
-
-
-
-
 */
-
 
 mods.compatskills.Thaumcraft.addResearchLock("FOCUSCLOUD", "dim|4");
 mods.compatskills.Thaumcraft.addResearchLock("FOCUSHEAL", "dim|4");
 mods.compatskills.Thaumcraft.addResearchLock("FOCUSRIFT", "dim|4");
-mods.compatskills.Thaumcraft.addResearchLock("RUNICSHIELDING", "trait|compatskills:sheildench");
+mods.compatskills.Thaumcraft.addResearchLock("RUNICSHIELDING", "trait|compatskills:shieldench");
