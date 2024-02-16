@@ -7,7 +7,7 @@ val warrior=mods.compatskills.SkillCreator.createSkill("warrior", "textures/bloc
 warrior.name="Warrior";
 warrior.setRankIcon(0, "reskillable:textures/warrior.png");
 warrior.setEnabled(true);
-warrior.setBaseLevelCost(0);
+warrior.setBaseLevelCost(0); 
 warrior.setLevelCap(10);
 warrior.setLevelStaggering(["1|7"]);
 warrior.setSkillPointInterval(1);
