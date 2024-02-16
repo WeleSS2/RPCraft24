@@ -3,20 +3,25 @@ import mods.compatskills.Skill;
 import crafttweaker.item.IItemStack as IItemStack;
 
 #Rogue tab
-val warrior=mods.compatskills.SkillCreator.createSkill("rogue", "textures/blocks/stonebrick.png");
-warrior.name="Rogue";
-warrior.setRankIcon(0, "reskillable:textures/rogue.png");
-warrior.setEnabled(true);
-warrior.setBaseLevelCost(0);
-warrior.setLevelCap(10);
-warrior.setLevelStaggering(["1|7"]);
-warrior.setSkillPointInterval(1);
+val rogue=mods.compatskills.SkillCreator.createSkill("rogue", "textures/blocks/stonebrick.png");
+rogue.name="Rogue";
+rogue.setRankIcon(0, "reskillable:textures/rogue.png");
+rogue.setEnabled(true);
+rogue.setBaseLevelCost(0);
+rogue.setLevelCap(10);
+rogue.setLevelStaggering(["1|7"]);
+rogue.setSkillPointInterval(1);
 
 #Traits
 val Archery = mods.compatskills.TraitCreator.createTrait("archery", 0, 0, "compatskills:rogue", 1);
 Archery.name = "Archer";
-Archery.description = "Archery - allow to use better bows and crossbows.";
+Archery.description = "Archery - allow to use better bows.";
 Archery.icon = "reskillable:textures/archery.png";
+
+val Xbow = mods.compatskills.TraitCreator.createTrait("xbow", 1, 0, "compatskills:rogue", 1);
+Xbow.name = "Crossbowman";
+Xbow.description = "Crossbowman - allow to use better crossbows.";
+Xbow.icon = "reskillable:textures/xbow.png";
 
 val Dagger = mods.compatskills.TraitCreator.createTrait("daggers", 4, 0, "compatskills:rogue", 1);
 Dagger.name = "Assassin";
