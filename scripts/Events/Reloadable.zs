@@ -28,7 +28,7 @@ import crafttweaker.entity.IEntityThrowable;
 import crafttweaker.text.ITextComponent;
 
 events.onPlayerAttackEntity(function(e as crafttweaker.event.PlayerAttackEntityEvent){
-
+#print("delete me");
 });
 
 events.onBlockHarvestDrops(function(e as crafttweaker.event.BlockHarvestDropsEvent){
