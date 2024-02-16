@@ -13,7 +13,7 @@ warrior.setLevelStaggering(["1|7"]);
 warrior.setSkillPointInterval(1);
 
 #Traits
-val Weapon = mods.compatskills.TraitCreator.createTrait("melee", 0, 0, "compatskills:warrior", 1, "trait|compatskills:warrior");
+val Weapon = mods.compatskills.TraitCreator.createTrait("sword", 0, 0, "compatskills:warrior", 1);
 Weapon.name = "Weapon master";
 Weapon.description = "Weapon specjalist - allow to use better weapons.";
 Weapon.icon = "reskillable:textures/weapon_specjalisation.png";
