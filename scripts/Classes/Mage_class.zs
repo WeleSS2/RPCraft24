@@ -11,14 +11,10 @@ spells.setRankIcon(0, "minecraft:textures/items/iron_ingot.png");
 spells.setEnabled(true);
 spells.setBaseLevelCost(0);
 spells.setLevelCap(5);
-spells.setRankIcon(0, "minecraft:textures/spells0.png");
-spells.setRankIcon(2, "minecraft:textures/spells1.png");
-spells.setRankIcon(4, "minecraft:textures/spells3.png");
-spells.setRankIcon(6, "minecraft:textures/spells2.png");
-spells.setRankIcon(8, "minecraft:textures/spells4.png");
+spells.setRankIcon(0, "minecraft:textures/mage.png");
 spells.setLevelStaggering(["1|10"]);
 spells.setSkillPointInterval(1);
-#mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:spells>, 1, "trait|compatskills:mage");
+mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:spells>, 1, "trait|compatskills:mage");
 
 
 #Spells
