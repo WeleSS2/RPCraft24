@@ -14,7 +14,7 @@ import crafttweaker.world.IBlockPos;
 import crafttweaker.block.IBlock;
 import crafttweaker.block.IBlockState;
 import crafttweaker.world.IBlockAccess;
-import crafttweaker.util.Math;
+#import crafttweaker.util.Math;
 import crafttweaker.world.IFacing;
 import crafttweaker.entity.IEntityEquipmentSlot;
 import crafttweaker.entity.IEntityXp;

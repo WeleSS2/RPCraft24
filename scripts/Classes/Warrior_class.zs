@@ -13,7 +13,7 @@ warrior.setLevelStaggering(["1|7"]);
 warrior.setSkillPointInterval(1);
 
 #Traits
-val Weapon = mods.compatskills.TraitCreator.createTrait("sword", 0, 0, "compatskills:warrior", 1);
+val Weapon = mods.compatskills.TraitCreator.createTrait("sword", 0, 0, "compatskills:warrior", 1, "trait|compatskills:warrior");
 Weapon.name = "Weapon master";
 Weapon.description = "Weapon specjalist - allow to use better weapons.";
 Weapon.icon = "reskillable:textures/weapon_specjalisation.png";
@@ -36,7 +36,7 @@ MagicKnight.icon = "reskillable:textures/magic_knight.png";
 #Skills
 
 #Weapons specialisation
-val MasterWeapon = mods.compatskills.TraitCreator.createTrait("weaponMastery", 0, 2, "compatskills:warrior", 1, "trait|compatskills:melee");
+val MasterWeapon = mods.compatskills.TraitCreator.createTrait("weaponMastery", 0, 2, "compatskills:warrior", 1, "trait|compatskills:sword");
 MasterWeapon.name = "Weapon specialisation";
 MasterWeapon.description = "Forces holder to use specyfic type of weapon.";
 MasterWeapon.icon = "reskillable:textures/weapon_mastery_specialisation.png";

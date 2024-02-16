@@ -13,17 +13,17 @@ rogue.setLevelStaggering(["1|7"]);
 rogue.setSkillPointInterval(1);
 
 #Traits
-val Archery = mods.compatskills.TraitCreator.createTrait("archery", 0, 0, "compatskills:rogue", 1);
+val Archery = mods.compatskills.TraitCreator.createTrait("archery", 0, 0, "compatskills:rogue", 1,  "trait|compatskills:rogue");
 Archery.name = "Archer";
 Archery.description = "Archery - allow to use better bows.";
 Archery.icon = "reskillable:textures/archery.png";
 
-val Xbow = mods.compatskills.TraitCreator.createTrait("xbow", 1, 0, "compatskills:rogue", 1);
+val Xbow = mods.compatskills.TraitCreator.createTrait("xbow", 1, 0, "compatskills:rogue", 1,  "trait|compatskills:rogue");
 Xbow.name = "Crossbowman";
 Xbow.description = "Crossbowman - allow to use better crossbows.";
 Xbow.icon = "reskillable:textures/xbow.png";
 
-val Dagger = mods.compatskills.TraitCreator.createTrait("daggers", 4, 0, "compatskills:rogue", 1);
+val Dagger = mods.compatskills.TraitCreator.createTrait("daggers", 4, 0, "compatskills:rogue", 1,  "trait|compatskills:rogue");
 Dagger.name = "Assassin";
 Dagger.description = "Powerful blows on backstabs using daggers.";
 Dagger.icon = "reskillable:textures/dagger.png";
@@ -31,7 +31,7 @@ Dagger.icon = "reskillable:textures/dagger.png";
 #Skills
 
 #Stealth
-val Stealth = mods.compatskills.TraitCreator.createTrait("stealth", 0, 1, "compatskills:rogue", 1);
+val Stealth = mods.compatskills.TraitCreator.createTrait("stealth", 0, 1, "compatskills:rogue", 1,  "trait|compatskills:rogue");
 Stealth.name = "Stealth strike";
 Stealth.description = "Sneak attack vs target from behind using dagger deals x3 damage.";
 Stealth.icon = "reskillable:textures/stealth.png";
