@@ -299,6 +299,7 @@ val item_nep_1 = [
 <iceandfire:dragonbone_sword>,
 <endreborn:tool_sword_endorium>
 ] as IItemStack[];
+
 for item in item_nep_1 {
      mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|20]~[trait|compatskills:sword]");
 }
@@ -308,7 +309,7 @@ val item_drag_1 = [
 <spartanfire:greatsword_dragonbone>,
 <spartanfire:longsword_dragonbone>,
 <spartanfire:saber_dragonbone>,
-<spartanfire:rapier_dragonbone>,\
+<spartanfire:rapier_dragonbone>,
 <spartanfire:spear_dragonbone>,
 <spartanfire:pike_dragonbone>,
 <spartanfire:halberd_dragonbone>,
@@ -320,7 +321,7 @@ val item_drag_1 = [
 <spartanfire:boomerang_dragonbone>,
 <spartanfire:mace_dragonbone>,
 <spartanfire:staff_dragonbone>,
-<spartanfire:glaive_dragonbone>,\
+<spartanfire:glaive_dragonbone>,
 <spartanweaponryarcana:longsword_voidmetal>,
 <spartanweaponryarcana:katana_voidmetal>,
 <spartanweaponryarcana:saber_voidmetal>,
