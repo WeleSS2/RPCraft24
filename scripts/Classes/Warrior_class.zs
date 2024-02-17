@@ -588,7 +588,7 @@ javelinMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingH
     }
 
     e.amount = e.amount*1.5;
-    if(player.world.random.nextInt(2)==0) e.entityLivingBase.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(100,0));
+    if(player.world.random.nextInt(2)==0) e.entityLivingBase.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1,0));
 };
 
 val boomerangMasterWeapon = mods.compatskills.TraitCreator.createTrait("boomerangMaster", 4, 3, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
