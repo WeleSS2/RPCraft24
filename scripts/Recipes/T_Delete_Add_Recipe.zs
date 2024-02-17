@@ -285,3 +285,27 @@ recipes.removeByRecipeName("steel_co:carbonizedironrecipe");
 val steel = <ore:ingotSteel>;
 steel.add(<steel_co:steel_ingot>);
 
+val daggersList = [
+<spartandefiled:dagger_umbrium>,
+<spartanfire:dagger_dragonbone>,
+<spartanfire:dagger_fire_dragonbone>,
+<spartanfire:dagger_ice_dragonbone>,
+<spartanfire:dagger_jungle>,
+<spartanfire:dagger_desert>,
+<spartanfire:dagger_jungle_venom>,
+<spartanfire:dagger_desert_venom>,
+<spartanweaponry:dagger_wood>,
+<spartanweaponry:dagger_stone>,
+<spartanweaponry:dagger_iron>,
+<spartanweaponry:dagger_gold>,
+<spartanweaponry:dagger_diamond>,
+<spartanweaponry:dagger_bronze>,
+<spartanweaponry:dagger_steel>,
+<spartanweaponry:dagger_silver>,
+<spartanweaponryarcana:dagger_thaumium>,
+<spartanweaponryarcana:dagger_voidmetal>,
+<spartanweaponryarcana:dagger_dawnstone>
+] as IItemStack[];
+
+<ore:daggerRogue>.addItems(daggersList);
+
