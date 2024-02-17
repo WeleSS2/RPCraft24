@@ -197,7 +197,6 @@ val melee_lances_0 = [
 <spartanfire:lance_jungle>,
 <spartanweaponry:lance_gold>,
 <spartanweaponry:lance_silver>,
-<spartanweaponry:lance_stone>,
 <spartanfire:lance_jungle_venom>
 ] as IItemStack[];
 
@@ -222,7 +221,6 @@ val daggers_0 = [
 <spartanweaponryarcana:dagger_thaumium>,
 <spartanweaponry:dagger_gold>,
 <spartanweaponry:dagger_silver>,
-<spartanweaponry:dagger_stone>,
 <spartanweaponry:dagger_iron>,
 <spartanfire:dagger_desert>,
 <spartanfire:dagger_desert_venom>,
@@ -232,7 +230,6 @@ val daggers_0 = [
 <spartanweaponryarcana:throwing_knife_thaumium>,
 <spartanweaponry:throwing_knife_gold>,
 <spartanweaponry:throwing_knife_silver>,
-<spartanweaponry:throwing_knife_stone>,
 <mysticalworld:copper_knife>,
 <spartanweaponry:throwing_knife_iron>,
 <spartanfire:throwing_knife_desert>,
