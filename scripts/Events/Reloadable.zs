@@ -26,9 +26,10 @@ import crafttweaker.entity.AttributeModifier;
 import crafttweaker.liquid.ILiquidDefinition;
 import crafttweaker.entity.IEntityThrowable;
 import crafttweaker.text.ITextComponent;
-
+import crafttweaker.world.IVector3d;
+/*
 events.onPlayerAttackEntity(function(e as crafttweaker.event.PlayerAttackEntityEvent){
-#print("delete me");
+
 });
 
 events.onBlockHarvestDrops(function(e as crafttweaker.event.BlockHarvestDropsEvent){
@@ -38,12 +39,6 @@ events.onBlockHarvestDrops(function(e as crafttweaker.event.BlockHarvestDropsEve
 events.onEntityLivingHurt(function(e as crafttweaker.event.EntityLivingHurtEvent) {
     if(isNull(e.entityLivingBase)
     || e.entityLivingBase.world.isRemote()) return;
-
-    if(!e.damageSource.getTrueSource() instanceof IPlayer) return;
-
-    val player as IPlayer= e.damageSource.getTrueSource();
-
-    player.addPotionEffect(<potion:minecraft:strength>.makePotionEffect(200, 0));
 });
 
 events.onEntityLivingDeath(function(e as crafttweaker.event.EntityLivingDeathEvent) {
@@ -51,6 +46,10 @@ events.onEntityLivingDeath(function(e as crafttweaker.event.EntityLivingDeathEve
 });
 
 events.onPlayerTick(function(e as crafttweaker.event.PlayerTickEvent) {
+    if(e.player.world.isRemote()) return;
+    val player as IPlayer = e.player;
+    val world as IWorld = player.world;
+    if(world.time % 100 != 0) return;
 
 });
 
@@ -58,3 +57,4 @@ events.onPlayerTick(function(e as crafttweaker.event.PlayerTickEvent) {
 events.onPlayerInteractBlock(function(e as crafttweaker.event.PlayerInteractBlockEvent) {
 
 });
+*/
