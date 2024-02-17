@@ -189,30 +189,83 @@ mods.compatskills.Requirement.addRequirement(<minecraft:enchanting_table>, "resk
 
 # BeastMaster lances
 
-val melee_lances = [
-<spartanweaponry:lance_diamond>,
-<spartanfire:lance_dragonbone>,
-<spartanweaponryarcana:lance_voidmetal>,
+val melee_lances_0 = [
 <spartanweaponryarcana:lance_thaumium>,
-<spartanfire:lance_fire_dragonbone>,
-<spartanfire:lance_ice_dragonbone>,
-<spartanweaponry:lance_gold>,
-<spartanweaponry:lance_silver>,
-<spartanweaponry:lance_stone>,
-<spartanweaponry:lance_steel>,
 <spartanweaponry:lance_iron>,
 <spartanfire:lance_desert>,
 <spartanfire:lance_desert_venom>,
 <spartanfire:lance_jungle>,
+<spartanweaponry:lance_gold>,
+<spartanweaponry:lance_silver>,
+<spartanweaponry:lance_stone>,
 <spartanfire:lance_jungle_venom>
+] as IItemStack[];
+
+for item in melee_lances_0 {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|8]~[or|[trait|compatskills:husar]~[trait|compatskills:sword]]");
+}
+
+val melee_lances = [
+<spartanweaponry:lance_diamond>,
+<spartanfire:lance_dragonbone>,
+<spartanweaponryarcana:lance_voidmetal>,
+<spartanfire:lance_fire_dragonbone>,
+<spartanfire:lance_ice_dragonbone>,
+<spartanweaponry:lance_steel>
 ] as IItemStack[];
 
 for item in melee_lances {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|16]~[or|[trait|compatskills:husar]~[trait|compatskills:sword]]");
 }
 
-val item1ad = [
+val daggers_0 = [
+<spartanweaponryarcana:dagger_thaumium>,
+<spartanweaponry:dagger_gold>,
+<spartanweaponry:dagger_silver>,
+<spartanweaponry:dagger_stone>,
+<spartanweaponry:dagger_iron>,
+<spartanfire:dagger_desert>,
+<spartanfire:dagger_desert_venom>,
+<spartanfire:dagger_jungle>,
+<spartanfire:dagger_jungle_venom>,
+<spartanweaponryarcana:dagger_thaumium>,
+<spartanweaponryarcana:throwing_knife_thaumium>,
+<spartanweaponry:throwing_knife_gold>,
+<spartanweaponry:throwing_knife_silver>,
+<spartanweaponry:throwing_knife_stone>,
+<mysticalworld:copper_knife>,
+<spartanweaponry:throwing_knife_iron>,
+<spartanfire:throwing_knife_desert>,
+<spartanfire:throwing_knife_desert_venom>,
+<spartanfire:throwing_knife_jungle>,
+<spartanfire:throwing_knife_jungle_venom>
+] as IItemStack[];
+
+for item in daggers_0 {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|8]~[or|[trait|compatskills:daggers]~[trait|compatskills:sword]]");
+}
+
+val daggers_1 = [
 <spartanweaponry:dagger_diamond>,
+<spartanfire:dagger_dragonbone>,
+<spartanweaponryarcana:dagger_voidmetal>,
+<spartanfire:dagger_fire_dragonbone>,
+<spartanfire:dagger_ice_dragonbone>,
+<spartanweaponry:dagger_steel>,
+<mysticalworld:amethyst_knife>,
+<spartanweaponry:throwing_knife_diamond>,
+<spartanfire:throwing_knife_dragonbone>,
+<spartanweaponryarcana:throwing_knife_voidmetal>,
+<spartanfire:throwing_knife_fire_dragonbone>,
+<spartanfire:throwing_knife_ice_dragonbone>,
+<spartanweaponry:throwing_knife_steel>
+] as IItemStack[];
+
+for item in daggers_1 {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|16]~[or|[trait|compatskills:daggers]~[trait|compatskills:sword]]");
+}
+
+val item1ad = [
 <spartanweaponry:longsword_diamond>,
 <spartanweaponry:katana_diamond>,
 <spartanweaponry:saber_diamond>,
@@ -224,9 +277,7 @@ val item1ad = [
 <minecraft:diamond_sword>,
 <mysticalworld:amethyst_sword>,
 <spartanweaponry:halberd_diamond>,
-<mysticalworld:amethyst_knife>,
 <spartanweaponry:pike_diamond>,
-<spartanweaponry:throwing_knife_diamond>,
 <spartanweaponry:throwing_axe_diamond>,
 <spartanweaponry:javelin_diamond>,
 <spartanweaponry:boomerang_diamond>,
@@ -257,22 +308,19 @@ val item_drag_1 = [
 <spartanfire:greatsword_dragonbone>,
 <spartanfire:longsword_dragonbone>,
 <spartanfire:saber_dragonbone>,
-<spartanfire:rapier_dragonbone>,
-<spartanfire:dagger_dragonbone>,
+<spartanfire:rapier_dragonbone>,\
 <spartanfire:spear_dragonbone>,
 <spartanfire:pike_dragonbone>,
 <spartanfire:halberd_dragonbone>,
 <spartanfire:warhammer_dragonbone>,
 <spartanfire:hammer_dragonbone>,
 <spartanfire:throwing_axe_dragonbone>,
-<spartanfire:throwing_knife_dragonbone>,
 <spartanfire:javelin_dragonbone>,
 <spartanfire:battleaxe_dragonbone>,
 <spartanfire:boomerang_dragonbone>,
 <spartanfire:mace_dragonbone>,
 <spartanfire:staff_dragonbone>,
-<spartanfire:glaive_dragonbone>,
-<spartanweaponryarcana:dagger_voidmetal>,
+<spartanfire:glaive_dragonbone>,\
 <spartanweaponryarcana:longsword_voidmetal>,
 <spartanweaponryarcana:katana_voidmetal>,
 <spartanweaponryarcana:saber_voidmetal>,
@@ -283,7 +331,6 @@ val item_drag_1 = [
 <spartanweaponryarcana:spear_voidmetal>,
 <spartanweaponryarcana:halberd_voidmetal>,
 <spartanweaponryarcana:pike_voidmetal>,
-<spartanweaponryarcana:throwing_knife_voidmetal>,
 <spartanweaponryarcana:throwing_axe_voidmetal>,
 <spartanweaponryarcana:javelin_voidmetal>,
 <spartanweaponryarcana:boomerang_voidmetal>,
@@ -291,7 +338,6 @@ val item_drag_1 = [
 <spartanweaponryarcana:mace_voidmetal>,
 <spartanweaponryarcana:glaive_voidmetal>,
 <spartanweaponryarcana:staff_voidmetal>,
-<spartanweaponryarcana:dagger_thaumium>,
 <spartanweaponryarcana:longsword_thaumium>,
 <spartanweaponryarcana:katana_thaumium>,
 <spartanweaponryarcana:saber_thaumium>,
@@ -302,7 +348,6 @@ val item_drag_1 = [
 <spartanweaponryarcana:spear_thaumium>,
 <spartanweaponryarcana:halberd_thaumium>,
 <spartanweaponryarcana:pike_thaumium>,
-<spartanweaponryarcana:throwing_knife_thaumium>,
 <spartanweaponryarcana:throwing_axe_thaumium>,
 <spartanweaponryarcana:javelin_thaumium>,
 <spartanweaponryarcana:boomerang_thaumium>,
@@ -332,7 +377,6 @@ val item1bone = [
 <spartanfire:katana_fire_dragonbone>,
 <spartanfire:longsword_fire_dragonbone>,
 <spartanfire:saber_fire_dragonbone>,
-<spartanfire:dagger_fire_dragonbone>,
 <spartanfire:spear_fire_dragonbone>,
 <spartanfire:pike_fire_dragonbone>,
 <spartanfire:halberd_fire_dragonbone>,
@@ -340,7 +384,6 @@ val item1bone = [
 <spartanfire:hammer_fire_dragonbone>,
 <iceandfire:dragonbone_sword_fire>,
 <spartanfire:throwing_axe_fire_dragonbone>,
-<spartanfire:throwing_knife_fire_dragonbone>,
 <spartanfire:javelin_fire_dragonbone>,
 <spartanfire:battleaxe_fire_dragonbone>,
 <spartanfire:boomerang_fire_dragonbone>,
@@ -352,9 +395,7 @@ val item1bone = [
 <spartanfire:greatsword_ice_dragonbone>,
 <spartanfire:longsword_ice_dragonbone>,
 <spartanfire:saber_ice_dragonbone>,
-<spartanfire:throwing_knife_ice_dragonbone>,
 <spartanfire:rapier_ice_dragonbone>,
-<spartanfire:dagger_ice_dragonbone>,
 <spartanfire:spear_ice_dragonbone>,
 <spartanfire:pike_ice_dragonbone>,
 <spartanfire:halberd_ice_dragonbone>,
@@ -446,7 +487,6 @@ for item in item1daa {
 
 val item43gold= [
 <minecraft:golden_sword>,
-<spartanweaponry:dagger_gold>,
 <spartanweaponry:longsword_gold>,
 <spartanweaponry:katana_gold>,
 <spartanweaponry:saber_gold>,
@@ -457,7 +497,6 @@ val item43gold= [
 <spartanweaponry:spear_gold>,
 <spartanweaponry:halberd_gold>,
 <spartanweaponry:pike_gold>,
-<spartanweaponry:throwing_knife_gold>,
 <spartanweaponry:throwing_axe_gold>,
 <spartanweaponry:javelin_gold>,
 <spartanweaponry:boomerang_gold>,
@@ -466,7 +505,6 @@ val item43gold= [
 <spartanweaponry:glaive_gold>,
 <spartanweaponry:staff_gold>,
 <iceandfire:silver_sword>,
-<spartanweaponry:dagger_silver>,
 <spartanweaponry:longsword_silver>,
 <spartanweaponry:katana_silver>,
 <spartanweaponry:saber_silver>,
@@ -477,7 +515,6 @@ val item43gold= [
 <spartanweaponry:halberd_silver>,
 <spartanweaponry:spear_silver>,
 <spartanweaponry:pike_silver>,
-<spartanweaponry:throwing_knife_silver>,
 <spartanweaponry:throwing_axe_silver>,
 <spartanweaponry:javelin_silver>,
 <spartanweaponry:boomerang_silver>,
@@ -499,7 +536,6 @@ val item2 = [
 <spartanweaponry:boomerang_stone>,
 <spartanweaponry:javelin_stone>,
 <spartanweaponry:throwing_axe_stone>,
-<spartanweaponry:throwing_knife_stone>,
 <minecraft:stone_sword>,
 <spartanweaponry:hammer_stone>,
 <spartanweaponry:greatsword_stone>,
@@ -507,7 +543,6 @@ val item2 = [
 <spartanweaponry:saber_stone>,
 <spartanweaponry:katana_stone>,
 <spartanweaponry:longsword_stone>,
-<spartanweaponry:dagger_stone>,
 <spartanweaponry:pike_stone>,
 <spartanweaponry:halberd_stone>,
 <spartanweaponry:warhammer_stone>
@@ -645,14 +680,12 @@ val steel_melee_all= [
 <spartanweaponry:boomerang_steel>,
 <spartanweaponry:javelin_steel>,
 <spartanweaponry:throwing_axe_steel>,
-<spartanweaponry:throwing_knife_steel>,
 <spartanweaponry:hammer_steel>,
 <spartanweaponry:greatsword_steel>,
 <spartanweaponry:rapier_steel>,
 <spartanweaponry:saber_steel>,
 <spartanweaponry:katana_steel>,
 <spartanweaponry:longsword_steel>,
-<spartanweaponry:dagger_steel>,
 <spartanweaponry:pike_steel>,
 <spartanweaponry:halberd_steel>,
 <spartanweaponry:warhammer_steel>,
@@ -811,10 +844,8 @@ for item in item2 {
 }
 
 val item5v = [
-<mysticalworld:copper_knife>,
 <mysticalworld:copper_sword>,
 <minecraft:iron_sword>,
-<spartanweaponry:dagger_iron>,
 <spartanweaponry:longsword_iron>,
 <spartanweaponry:katana_iron>,
 <spartanweaponry:saber_iron>,
@@ -825,7 +856,6 @@ val item5v = [
 <spartanweaponry:spear_iron>,
 <spartanweaponry:halberd_iron>,
 <spartanweaponry:pike_iron>,
-<spartanweaponry:throwing_knife_iron>,
 <spartanweaponry:throwing_axe_iron>,
 <spartanweaponry:javelin_iron>,
 <spartanweaponry:boomerang_iron>,
@@ -840,14 +870,12 @@ val item5v = [
 <spartanfire:longsword_desert>,
 <spartanfire:saber_desert>,
 <spartanfire:rapier_desert>,
-<spartanfire:dagger_desert>,
 <spartanfire:spear_desert>,
 <spartanfire:pike_desert>,
 <spartanfire:halberd_desert>,
 <spartanfire:warhammer_desert>,
 <spartanfire:hammer_desert>,
 <spartanfire:throwing_axe_desert>,
-<spartanfire:throwing_knife_desert>,
 <spartanfire:javelin_desert>,
 <spartanfire:battleaxe_desert>,
 <spartanfire:boomerang_desert>,
@@ -859,14 +887,12 @@ val item5v = [
 <spartanfire:longsword_desert_venom>,
 <spartanfire:saber_desert_venom>,
 <spartanfire:rapier_desert_venom>,
-<spartanfire:dagger_desert_venom>,
 <spartanfire:spear_desert_venom>,
 <spartanfire:pike_desert_venom>,
 <spartanfire:halberd_desert_venom>,
 <spartanfire:warhammer_desert_venom>,
 <spartanfire:hammer_desert_venom>,
 <spartanfire:throwing_axe_desert_venom>,
-<spartanfire:throwing_knife_desert_venom>,
 <spartanfire:javelin_desert_venom>,
 <spartanfire:battleaxe_desert_venom>,
 <spartanfire:boomerang_desert_venom>,
@@ -880,14 +906,12 @@ val item5v = [
 <spartanfire:longsword_jungle>,
 <spartanfire:saber_jungle>,
 <spartanfire:rapier_jungle>,
-<spartanfire:dagger_jungle>,
 <spartanfire:spear_jungle>,
 <spartanfire:pike_jungle>,
 <spartanfire:halberd_jungle>,
 <spartanfire:warhammer_jungle>,
 <spartanfire:hammer_jungle>,
 <spartanfire:throwing_axe_jungle>,
-<spartanfire:throwing_knife_jungle>,
 <spartanfire:javelin_jungle>,
 <spartanfire:battleaxe_jungle>,
 <spartanfire:boomerang_jungle>,
@@ -898,14 +922,12 @@ val item5v = [
 <spartanfire:longsword_jungle_venom>,
 <spartanfire:saber_jungle_venom>,
 <spartanfire:rapier_jungle_venom>,
-<spartanfire:dagger_jungle_venom>,
 <spartanfire:spear_jungle_venom>,
 <spartanfire:pike_jungle_venom>,
 <spartanfire:halberd_jungle_venom>,
 <spartanfire:warhammer_jungle_venom>,
 <spartanfire:hammer_jungle_venom>,
 <spartanfire:throwing_axe_jungle_venom>,
-<spartanfire:throwing_knife_jungle_venom>,
 <spartanfire:javelin_jungle_venom>,
 <spartanfire:battleaxe_jungle_venom>,
 <spartanfire:boomerang_jungle_venom>,
