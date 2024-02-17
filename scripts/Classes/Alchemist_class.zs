@@ -11,6 +11,7 @@ alchemist.setBaseLevelCost(0);
 alchemist.setLevelCap(10);
 alchemist.setLevelStaggering(["1|7"]);
 alchemist.setSkillPointInterval(1);
+mods.compatskills.VisibilityLock.addVisibilityLock(<skill:compatskills:alchemy>, "trait|compatskills:alch");
 
 #Traits
 val alch1=mods.compatskills.TraitCreator.createTrait("brewing", 2, 0, "compatskills:alchemy", 1, "trait|compatskills:alch");

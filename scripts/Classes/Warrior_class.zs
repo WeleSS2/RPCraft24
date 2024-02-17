@@ -11,6 +11,7 @@ warrior.setBaseLevelCost(0);
 warrior.setLevelCap(10);
 warrior.setLevelStaggering(["1|7"]);
 warrior.setSkillPointInterval(1);
+mods.compatskills.VisibilityLock.addVisibilityLock(<skill:compatskills:warrior>, "trait|compatskills:warrior");
 
 #Traits
 val Weapon = mods.compatskills.TraitCreator.createTrait("sword", 0, 0, "compatskills:warrior", 1, "trait|compatskills:warrior");
@@ -40,3 +41,19 @@ val MasterWeapon = mods.compatskills.TraitCreator.createTrait("weaponMastery", 0
 MasterWeapon.name = "Weapon specialisation";
 MasterWeapon.description = "Forces holder to use specyfic type of weapon.";
 MasterWeapon.icon = "reskillable:textures/weapon_mastery_specialisation.png";
+/*
+#Specialisation tab
+val weaponMasteryTab=mods.compatskills.SkillCreator.createSkill("weaponMasteryTab", "textures/blocks/stonebrick.png");
+weaponMasteryTab.name="Weapon mastery";
+weaponMasteryTab.setRankIcon(0, "reskillable:textures/weapon_mastery_specialisation.png");
+weaponMasteryTab.setEnabled(true);
+weaponMasteryTab.setBaseLevelCost(1); 
+weaponMasteryTab.setLevelCap(2);
+weaponMasteryTab.setSkillPointInterval(2);
+mods.compatskills.VisibilityLock.addVisibilityLock(<skill:compatskills:weaponMasteryTab>, "trait|compatskills:weaponMastery");
+
+val MasterWeaponSword = mods.compatskills.TraitCreator.createTrait("weaponMastery", 0, 2, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
+MasterWeaponSword.name = "Sword master";
+MasterWeaponSword.description = "Fire bonus.";
+MasterWeaponSword.icon = "reskillable:textures/weapon_mastery_specialisation.png";
+*/

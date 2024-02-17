@@ -14,6 +14,7 @@ spells.setLevelCap(5);
 spells.setRankIcon(0, "minecraft:textures/mage.png");
 spells.setLevelStaggering(["1|5"]);
 spells.setSkillPointInterval(1);
+mods.compatskills.VisibilityLock.addVisibilityLock(<skill:compatskills:spells>, "trait|compatskills:mage");
 
 #Spells
 #Advanced

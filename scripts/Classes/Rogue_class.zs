@@ -38,7 +38,7 @@ rogue.setBaseLevelCost(0);
 rogue.setLevelCap(10);
 rogue.setLevelStaggering(["1|7"]);
 rogue.setSkillPointInterval(1);
-rogue.setHidden(true);
+mods.compatskills.VisibilityLock.addVisibilityLock(<skill:compatskills:rogue>, "trait|compatskills:rogue");
 
 #Traits
 val Archery = mods.compatskills.TraitCreator.createTrait("archery", 0, 0, "compatskills:rogue", 1,  "trait|compatskills:rogue");

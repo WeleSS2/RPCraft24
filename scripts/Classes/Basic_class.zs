@@ -7,7 +7,7 @@ import crafttweaker.item.IItemStack as IItemStack;
 #Classes tab
 val class=mods.compatskills.SkillCreator.createSkill("classes", "textures/blocks/stonebrick.png");
 class.name="Classes";
-class.setRankIcon(0, "reskillable:textures/cl0.png");
+class.setRankIcon(1, "reskillable:textures/cl0.png");
 class.setRankIcon(2, "reskillable:textures/cl1.png");
 class.setEnabled(true);
 class.setBaseLevelCost(0);

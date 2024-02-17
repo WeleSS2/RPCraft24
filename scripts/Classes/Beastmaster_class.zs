@@ -3,14 +3,15 @@ import mods.compatskills.Skill;
 import crafttweaker.item.IItemStack as IItemStack;
 
 #Beastmaster tab
-val warrior=mods.compatskills.SkillCreator.createSkill("beastmaster", "textures/blocks/stonebrick.png");
-warrior.name="Beastmaster";
-warrior.setRankIcon(0, "reskillable:textures/beastmaster.png");
-warrior.setEnabled(true);
-warrior.setBaseLevelCost(0);
-warrior.setLevelCap(10);
-warrior.setLevelStaggering(["1|7"]);
-warrior.setSkillPointInterval(1);
+val BeastMaster=mods.compatskills.SkillCreator.createSkill("beastmaster", "textures/blocks/stonebrick.png");
+BeastMaster.name="Beastmaster";
+BeastMaster.setRankIcon(0, "reskillable:textures/beastmaster.png");
+BeastMaster.setEnabled(true);
+BeastMaster.setBaseLevelCost(0);
+BeastMaster.setLevelCap(10);
+BeastMaster.setLevelStaggering(["1|7"]);
+BeastMaster.setSkillPointInterval(1);
+mods.compatskills.VisibilityLock.addVisibilityLock(<skill:compatskills:beastmaster>, "trait|compatskills:beastmaster");
 
 #Traits
 val Tamer=mods.compatskills.TraitCreator.createTrait("tamer", 2, 0, "compatskills:beastmaster", 2,  "trait|compatskills:beastmaster");
