@@ -11,15 +11,9 @@ spells.setRankIcon(0, "minecraft:textures/items/iron_ingot.png");
 spells.setEnabled(true);
 spells.setBaseLevelCost(0);
 spells.setLevelCap(5);
-spells.setRankIcon(0, "minecraft:textures/spells0.png");
-spells.setRankIcon(2, "minecraft:textures/spells1.png");
-spells.setRankIcon(4, "minecraft:textures/spells3.png");
-spells.setRankIcon(6, "minecraft:textures/spells2.png");
-spells.setRankIcon(8, "minecraft:textures/spells4.png");
-spells.setLevelStaggering(["1|10"]);
+spells.setRankIcon(0, "minecraft:textures/mage.png");
+spells.setLevelStaggering(["1|5"]);
 spells.setSkillPointInterval(1);
-#mods.compatskills.SkillLocks.addLevelLock(<skill:reskillable:spells>, 1, "trait|compatskills:mage");
-
 
 #Spells
 #Advanced
@@ -81,6 +75,20 @@ val m_mas_15=mods.compatskills.TraitCreator.createTrait("n4magic", 3, 2, "compat
 m_mas_15.name = "Master necromancy magic";
 m_mas_15.description = "Allow casting master tier necronamcy spells";
 m_mas_15.icon= "ebwizardry:textures/items/wand_master_necromancy.png";
+
+# PERKS
+
+
+
+
+
+
+
+
+
+
+# ITEM LOCKS
+
 
 mods.compatskills.Requirement.addRequirement(<ebwizardry:arcane_workbench>, "or|[trait|compatskills:mage]~[trait|compatskills:hybridm]");
 mods.compatskills.Requirement.addRequirement(<ebwizardry:magic_wand>, "or|[trait|compatskills:mage]~[trait|compatskills:hybridm]");

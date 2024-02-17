@@ -32,3 +32,8 @@ val Summon=mods.compatskills.TraitCreator.createTrait("summoner", 3, 0, "compats
 Summon.name = "Summoner";
 Summon.description = "Allow to summon creatures.";
 Summon.icon = "reskillable:textures/summon.png";
+
+val Lances=mods.compatskills.TraitCreator.createTrait("husar", 1, 0, "compatskills:beastmaster", 1,  "trait|compatskills:beastmaster");
+Lances.name = "Husar";
+Lances.description = "Allow to use lances.";
+Lances.icon = "reskillable:textures/assad.png";
