@@ -12,7 +12,7 @@ spells.setEnabled(true);
 spells.setBaseLevelCost(0);
 spells.setLevelCap(5);
 spells.setRankIcon(0, "minecraft:textures/mage.png");
-spells.setLevelStaggering(["1|10"]);
+spells.setLevelStaggering(["1|5"]);
 spells.setSkillPointInterval(1);
 
 #Spells
