@@ -64,7 +64,7 @@ MagicKnight.icon = "reskillable:textures/magic_knight.png";
 
 #Skills
 
-val YellowBrute = mods.compatskills.TraitCreator.createTrait("yellowBrute", 0, 2, "compatskills:warrior", 2, "trait|compatskills:armor");
+val YellowBrute = mods.compatskills.TraitCreator.createTrait("yellowBrute", 3, 2, "compatskills:warrior", 2, "trait|compatskills:armor");
 YellowBrute.name = "Yellow brute";
 YellowBrute.description = "At 21:37 you got resistance 2 for 6 min.";
 YellowBrute.icon = "reskillable:textures/yellowbrute.png";
