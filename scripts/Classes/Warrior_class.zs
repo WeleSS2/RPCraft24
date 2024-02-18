@@ -64,8 +64,24 @@ MagicKnight.icon = "reskillable:textures/magic_knight.png";
 
 #Skills
 
+val YellowBrute = mods.compatskills.TraitCreator.createTrait("yellowBrute", 0, 2, "compatskills:warrior", 2, "trait|compatskills:armor");
+YellowBrute.name = "Yellow brute";
+YellowBrute.description = "At 21:37 you got resistance 2 for 6 min.";
+YellowBrute.icon = "reskillable:textures/yellowbrute.png";
+
+YellowBrute.onPlayerTick = function(e as crafttweaker.event.PlayerTickEvent) {
+    if(e.player.world.isRemote()) return;
+    val player as IPlayer = e.player;
+    val world as IWorld = player.world;
+    if(world.time % 24000 != 21370) return;
+
+    server.commandManager.executeCommandSilent(server, "/particle totem "~player.x~" "~ (player.y + player.eyeHeight) ~" "~player.z~" .5 .5 .5 .1 50");
+    player.addPotionEffect(<potion:minecraft:resistance>.makePotionEffect(6000,0));
+};
+
+
 #Weapons specialisation
-val MasterWeapon = mods.compatskills.TraitCreator.createTrait("weaponMastery", 0, 2, "compatskills:warrior", 1, "trait|compatskills:sword");
+val MasterWeapon = mods.compatskills.TraitCreator.createTrait("weaponMastery", 0, 2, "compatskills:warrior", 2, "trait|compatskills:sword");
 MasterWeapon.name = "Weapon specialisation";
 MasterWeapon.description = "Forces holder to use specyfic type of weapon.";
 MasterWeapon.icon = "reskillable:textures/weapon_mastery_specialisation.png";
