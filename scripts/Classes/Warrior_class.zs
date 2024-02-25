@@ -115,7 +115,7 @@ swordMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -141,7 +141,7 @@ saberMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -167,7 +167,7 @@ katanaMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -193,7 +193,7 @@ rapierMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -261,7 +261,7 @@ battleaxeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -287,7 +287,7 @@ longswordMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -313,7 +313,7 @@ greatswordMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivi
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -339,7 +339,7 @@ maceMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHurt
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -365,7 +365,7 @@ hammerMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -391,7 +391,7 @@ warhammerMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -417,7 +417,7 @@ pikeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHurt
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -443,7 +443,7 @@ halberdMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingH
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -469,7 +469,7 @@ spearMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -495,7 +495,7 @@ glaiveMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -521,7 +521,7 @@ staffMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -547,7 +547,7 @@ throwingKnifeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityL
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -573,7 +573,7 @@ throwingAxeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLiv
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -599,7 +599,7 @@ javelinMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingH
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -625,7 +625,7 @@ boomerangMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
