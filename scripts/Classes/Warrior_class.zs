@@ -42,12 +42,12 @@ warrior.setSkillPointInterval(1);
 mods.compatskills.VisibilityLock.addVisibilityLock(<skill:compatskills:warrior>, "trait|compatskills:warrior");
 
 #Traits
-val Weapon = mods.compatskills.TraitCreator.createTrait("sword", 0, 0, "compatskills:warrior", 1, "trait|compatskills:warrior");
+val Weapon = mods.compatskills.TraitCreator.createTrait("sword", 0, 0, "compatskills:warrior", 2, "trait|compatskills:warrior");
 Weapon.name = "Weapon master";
 Weapon.description = "Weapon specjalist - allow to use better weapons.";
 Weapon.icon = "reskillable:textures/weapon_specjalisation.png";
 
-val Tank = mods.compatskills.TraitCreator.createTrait("armor", 4, 0, "compatskills:warrior", 1, "trait|compatskills:warrior");
+val Tank = mods.compatskills.TraitCreator.createTrait("armor", 4, 0, "compatskills:warrior", 2, "trait|compatskills:warrior");
 Tank.name = "Armor master";
 Tank.description = "Armor specjalist - allow to use better armors.";
 Tank.icon = "reskillable:textures/armor_specjalisation.png";
@@ -57,14 +57,25 @@ Shield.name = "Shield user";
 Shield.description = "Shield specjalist - allow to use shields.";
 Shield.icon = "reskillable:textures/shield_specjalisation.png";
 
-val MagicKnight = mods.compatskills.TraitCreator.createTrait("hybridm", 2, 1, "compatskills:warrior", 1, "trait|compatskills:warrior");
+val MagicKnight = mods.compatskills.TraitCreator.createTrait("hybridm", 2, 1, "compatskills:warrior", 3, "trait|compatskills:warrior");
 MagicKnight.name = "Magic knight";
 MagicKnight.description = "Hybrid of warrior and mage - allow using some spells.";
 MagicKnight.icon = "reskillable:textures/magic_knight.png";
 
-#Skills
+#Weapons specialisation
+val MasterWeapon = mods.compatskills.TraitCreator.createTrait("weaponMastery", 0, 2, "compatskills:warrior", 2, "trait|compatskills:sword");
+MasterWeapon.name = "Weapon specialisation";
+MasterWeapon.description = "Forces holder to use specyfic type of weapon.";
+MasterWeapon.icon = "reskillable:textures/weapon_mastery_specialisation.png";
 
-val YellowBrute = mods.compatskills.TraitCreator.createTrait("yellowBrute", 3, 2, "compatskills:warrior", 2, "trait|compatskills:armor");
+#Armors specialisation
+val MasterArmor = mods.compatskills.TraitCreator.createTrait("armorMastery", 4, 2, "compatskills:warrior", 2, "trait|compatskills:sword");
+MasterArmor.name = "Armor specialisation";
+MasterArmor.description = "Forces holder to use specyfic type of weapon.";
+MasterArmor.icon = "reskillable:textures/weapon_mastery_specialisation.png";
+
+#Skills
+val YellowBrute = mods.compatskills.TraitCreator.createTrait("yellowBrute", 0, 3, "compatskills:warrior", 2, "trait|compatskills:armor");
 YellowBrute.name = "Yellow brute";
 YellowBrute.description = "At 21:37 you got resistance 2 for 6 min.";
 YellowBrute.icon = "reskillable:textures/yellowbrute.png";
@@ -79,13 +90,25 @@ YellowBrute.onPlayerTick = function(e as crafttweaker.event.PlayerTickEvent) {
     player.addPotionEffect(<potion:minecraft:resistance>.makePotionEffect(6000,0));
 };
 
+val ps1 = mods.compatskills.TraitCreator.createTrait("ps1", 1, 3, "compatskills:warrior", 2, "trait|compatskills:warrior");
+ps1.name = "ps1";
+ps1.description = "ps1";
+ps1.icon = "reskillable:textures/assad.png";
 
-#Weapons specialisation
-val MasterWeapon = mods.compatskills.TraitCreator.createTrait("weaponMastery", 0, 2, "compatskills:warrior", 2, "trait|compatskills:sword");
-MasterWeapon.name = "Weapon specialisation";
-MasterWeapon.description = "Forces holder to use specyfic type of weapon.";
-MasterWeapon.icon = "reskillable:textures/weapon_mastery_specialisation.png";
+val ps2 = mods.compatskills.TraitCreator.createTrait("ps2", 2, 3, "compatskills:warrior", 2, "trait|compatskills:warrior");
+ps2.name = "ps2";
+ps2.description = "ps2";
+ps2.icon = "reskillable:textures/assad.png";
 
+val ps3 = mods.compatskills.TraitCreator.createTrait("ps3", 3, 3, "compatskills:warrior", 2, "trait|compatskills:warrior");
+ps3.name = "ps3";
+ps3.description = "ps3";
+ps3.icon = "reskillable:textures/assad.png";
+
+val ps4 = mods.compatskills.TraitCreator.createTrait("ps4", 4, 3, "compatskills:warrior", 2, "trait|compatskills:warrior");
+ps4.name = "ps4";
+ps4.description = "ps4";
+ps4.icon = "reskillable:textures/assad.png";
 //Weapon master tab
 val weaponMasteryTab=mods.compatskills.SkillCreator.createSkill("weaponMasteryTab", "textures/blocks/stonebrick.png");
 weaponMasteryTab.name="Weapon mastery";
@@ -115,7 +138,7 @@ swordMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -141,7 +164,7 @@ saberMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -167,7 +190,7 @@ katanaMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -193,7 +216,7 @@ rapierMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -261,7 +284,7 @@ battleaxeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -287,7 +310,7 @@ longswordMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -313,7 +336,7 @@ greatswordMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivi
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -339,7 +362,7 @@ maceMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHurt
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -365,7 +388,7 @@ hammerMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -391,7 +414,7 @@ warhammerMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -417,7 +440,7 @@ pikeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHurt
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -443,7 +466,7 @@ halberdMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingH
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -469,7 +492,7 @@ spearMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -495,7 +518,7 @@ glaiveMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -521,7 +544,7 @@ staffMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -547,7 +570,7 @@ throwingKnifeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityL
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -573,7 +596,7 @@ throwingAxeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLiv
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -599,7 +622,7 @@ javelinMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingH
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
@@ -625,10 +648,51 @@ boomerangMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     }
 
     if(!weaponCheck) {
-        e.cancel();
+        e.amount=e.amount/4.0;
         return;
     }
 
     e.amount = e.amount*1.5;
     if(player.world.random.nextInt(2)==0) e.entityLivingBase.addPotionEffect(<potion:potioncore:explode>.makePotionEffect(100,0));
 };
+
+# Tank Specialisation
+val armorMasteryTab=mods.compatskills.SkillCreator.createSkill("armorMasteryTab", "textures/blocks/stonebrick.png");
+armorMasteryTab.name="Armor mastery";
+armorMasteryTab.setRankIcon(0, "reskillable:textures/armor_mastery_specialisation.png");
+armorMasteryTab.setEnabled(true);
+armorMasteryTab.setBaseLevelCost(1); 
+armorMasteryTab.setLevelStaggering(["1|0"]);
+armorMasteryTab.setLevelCap(2);
+armorMasteryTab.setSkillPointInterval(2);
+mods.compatskills.VisibilityLock.addVisibilityLock(<skill:compatskills:armorMasteryTab>, "trait|compatskills:armorMastery");
+
+/*
+Early------
+Leather : speed I, jump I
+Chain, Iron : Absorption 2hp
+Scarlite : Str I
+Gold, Bookwyrm : Magic shield 6hp, 75% magic dmg
+Silver : Poison, Wither res. Regeneration I
+Death Worm : Step Up I, Speed I, Jump I
+Myrmex : Poison res, Haste I
+Copper : Night Vision
+Steel, Thaumium : Absorption 2hp, Res I
+Wool, Ice : Speed I, Absorption 4hp
+
+
+MId--------
+Diamond, Netherite, Obsidian : Absorption 8hp, Res I
+Neptunium: Absorption 10hp, Water Breathing
+Fire Dragon : Fire resistance: Str II, Absorption 6hp
+Ice dragon : Str II, Absorption 12hp
+Sea snake : Water Breathing, Str II
+Troll : Regeneration I, Absorption 10hp
+
+
+Late------
+Dragon : Creative Fly, Str II
+Golem : Regeneration II, Absorption 20hp, Res I
+Living : Regeneration I, Absorption 8hp
+Sentient : Regeneration I, Absorption 12hp, Str I
+*/
