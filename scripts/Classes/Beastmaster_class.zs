@@ -44,14 +44,15 @@ SoulLow.description = "Allow to bing weak souls.";
 SoulLow.icon = "reskillable:textures/assad.png";
 
 val SoulMid=mods.compatskills.TraitCreator.createTrait("beastbinder", 1, 2, "compatskills:beastmaster", 1,  "trait|compatskills:beast");
-SoulMid.name = "Sould";
+SoulMid.name = "Souls";
 SoulMid.description = "Allow to bind most souls.";
 SoulMid.icon = "reskillable:textures/assad.png";
 
-val SoulHigh=mods.compatskills.TraitCreator.createTrait("dragonbinder", 1, 3, "compatskills:beastmaster", 2,  "trait|compatskills:dragonrider");
+val SoulHigh=mods.compatskills.TraitCreator.createTrait("dragonbinder", 1, 3, "compatskills:beastmaster", 2,  "trait|compatskills:dragonraider");
 SoulHigh.name = "Strong Souls";
 SoulHigh.description = "Allow to bind all souls.";
 SoulHigh.icon = "reskillable:textures/assad.png";
+
 
 // https://rlcraft.fandom.com/wiki/Tameable_Creatures_(Lycanites)
 /*

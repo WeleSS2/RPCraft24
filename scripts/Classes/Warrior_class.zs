@@ -42,12 +42,12 @@ warrior.setSkillPointInterval(1);
 mods.compatskills.VisibilityLock.addVisibilityLock(<skill:compatskills:warrior>, "trait|compatskills:warrior");
 
 #Traits
-val Weapon = mods.compatskills.TraitCreator.createTrait("sword", 0, 0, "compatskills:warrior", 1, "trait|compatskills:warrior");
+val Weapon = mods.compatskills.TraitCreator.createTrait("sword", 0, 0, "compatskills:warrior", 2, "trait|compatskills:warrior");
 Weapon.name = "Weapon master";
 Weapon.description = "Weapon specjalist - allow to use better weapons.";
 Weapon.icon = "reskillable:textures/weapon_specjalisation.png";
 
-val Tank = mods.compatskills.TraitCreator.createTrait("armor", 4, 0, "compatskills:warrior", 1, "trait|compatskills:warrior");
+val Tank = mods.compatskills.TraitCreator.createTrait("armor", 4, 0, "compatskills:warrior", 2, "trait|compatskills:warrior");
 Tank.name = "Armor master";
 Tank.description = "Armor specjalist - allow to use better armors.";
 Tank.icon = "reskillable:textures/armor_specjalisation.png";
@@ -57,14 +57,25 @@ Shield.name = "Shield user";
 Shield.description = "Shield specjalist - allow to use shields.";
 Shield.icon = "reskillable:textures/shield_specjalisation.png";
 
-val MagicKnight = mods.compatskills.TraitCreator.createTrait("hybridm", 2, 1, "compatskills:warrior", 1, "trait|compatskills:warrior");
+val MagicKnight = mods.compatskills.TraitCreator.createTrait("hybridm", 2, 1, "compatskills:warrior", 3, "trait|compatskills:warrior");
 MagicKnight.name = "Magic knight";
 MagicKnight.description = "Hybrid of warrior and mage - allow using some spells.";
 MagicKnight.icon = "reskillable:textures/magic_knight.png";
 
-#Skills
+#Weapons specialisation
+val MasterWeapon = mods.compatskills.TraitCreator.createTrait("weaponMastery", 0, 2, "compatskills:warrior", 2, "trait|compatskills:sword");
+MasterWeapon.name = "Weapon specialisation";
+MasterWeapon.description = "Forces holder to use specyfic type of weapon.";
+MasterWeapon.icon = "reskillable:textures/weapon_mastery_specialisation.png";
 
-val YellowBrute = mods.compatskills.TraitCreator.createTrait("yellowBrute", 3, 2, "compatskills:warrior", 2, "trait|compatskills:armor");
+#Armors specialisation
+val MasterArmor = mods.compatskills.TraitCreator.createTrait("armorMastery", 4, 2, "compatskills:warrior", 2, "trait|compatskills:sword");
+MasterArmor.name = "Armor specialisation";
+MasterArmor.description = "Forces holder to use specyfic type of weapon.";
+MasterArmor.icon = "reskillable:textures/weapon_mastery_specialisation.png";
+
+#Skills
+val YellowBrute = mods.compatskills.TraitCreator.createTrait("yellowBrute", 0, 3, "compatskills:warrior", 2, "trait|compatskills:armor");
 YellowBrute.name = "Yellow brute";
 YellowBrute.description = "At 21:37 you got resistance 2 for 6 min.";
 YellowBrute.icon = "reskillable:textures/yellowbrute.png";
@@ -79,13 +90,25 @@ YellowBrute.onPlayerTick = function(e as crafttweaker.event.PlayerTickEvent) {
     player.addPotionEffect(<potion:minecraft:resistance>.makePotionEffect(6000,0));
 };
 
+val ps1 = mods.compatskills.TraitCreator.createTrait("ps1", 1, 3, "compatskills:warrior", 2, "trait|compatskills:warrior");
+ps1.name = "ps1";
+ps1.description = "ps1";
+ps1.icon = "reskillable:textures/assad.png";
 
-#Weapons specialisation
-val MasterWeapon = mods.compatskills.TraitCreator.createTrait("weaponMastery", 0, 2, "compatskills:warrior", 2, "trait|compatskills:sword");
-MasterWeapon.name = "Weapon specialisation";
-MasterWeapon.description = "Forces holder to use specyfic type of weapon.";
-MasterWeapon.icon = "reskillable:textures/weapon_mastery_specialisation.png";
+val ps2 = mods.compatskills.TraitCreator.createTrait("ps2", 2, 3, "compatskills:warrior", 2, "trait|compatskills:warrior");
+ps2.name = "ps2";
+ps2.description = "ps2";
+ps2.icon = "reskillable:textures/assad.png";
 
+val ps3 = mods.compatskills.TraitCreator.createTrait("ps3", 3, 3, "compatskills:warrior", 2, "trait|compatskills:warrior");
+ps3.name = "ps3";
+ps3.description = "ps3";
+ps3.icon = "reskillable:textures/assad.png";
+
+val ps4 = mods.compatskills.TraitCreator.createTrait("ps4", 4, 3, "compatskills:warrior", 2, "trait|compatskills:warrior");
+ps4.name = "ps4";
+ps4.description = "ps4";
+ps4.icon = "reskillable:textures/assad.png";
 //Weapon master tab
 val weaponMasteryTab=mods.compatskills.SkillCreator.createSkill("weaponMasteryTab", "textures/blocks/stonebrick.png");
 weaponMasteryTab.name="Weapon mastery";

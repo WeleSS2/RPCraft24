@@ -816,10 +816,6 @@ mods.compatskills.Requirement.addRequirement(<bountifulbaubles:shieldcobalt>, "a
 mods.compatskills.Requirement.addRequirement(<bountifulbaubles:shieldankh>, "and|[reskillable:defense|32]~[trait|compatskills:shield]");
 mods.compatskills.Requirement.addRequirement(<bountifulbaubles:shieldobsidian>, "and|[reskillable:defense|24]~[trait|compatskills:shield]");
 
-for item in item2 {
-    mods.compatskills.Requirement.addRequirement(item, "reskillable:attack|2");
-}
-
 val item_attack_8 = [
 <mysticalworld:copper_sword>,
 <minecraft:iron_sword>,
