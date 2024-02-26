@@ -5,7 +5,7 @@ import mods.compatskills.Skill;
 import crafttweaker.item.IItemStack as IItemStack;
 
 #Tools list
-val itemt1 = [
+val item_tools_2 = [
 <minecraft:stone_hoe>,
 <minecraft:stone_axe>,
 <minecraft:stone_pickaxe>,
@@ -14,11 +14,11 @@ val itemt1 = [
 <aquaculture:fishing_rod>
  ] as IItemStack[];
 
-for item in itemt1 {
+for item in item_tools_2 {
     mods.compatskills.Requirement.addRequirement(item, "compatskills:tools|2");
 }
 
-val itemt2 = [
+val item_tools_8 = [
 <mysticalworld:copper_hoe>,
 <mysticalworld:copper_shovel>,
 <mysticalworld:copper_axe>,
@@ -56,11 +56,11 @@ val itemt2 = [
 //<cavern:aquamarine_axe>,
 //<cavern:aquamarine_pickaxe>,
 
-for item in itemt2 {
+for item in item_tools_8 {
     mods.compatskills.Requirement.addRequirement(item, "compatskills:tools|8");
 }
 
-val itemt3 = [
+val item_tools_16 = [
 <mysticalworld:amethyst_pickaxe>,
 <mysticalworld:amethyst_axe>,
 <mysticalworld:amethyst_hoe>,
@@ -91,11 +91,11 @@ val itemt3 = [
 //<cavern:magnite_shovel>,
 //<cavern:magnite_axe>,
 //<cavern:magnite_pickaxe>
-for item in itemt3 {
+for item in item_tools_16 {
     mods.compatskills.Requirement.addRequirement(item, "compatskills:tools|16");
 }
 
-val itemt4 = [
+val item_tools_20 = [
 <iceandfire:dragonbone_pickaxe>,
 <iceandfire:dragonbone_axe>,
 <iceandfire:dragonbone_shovel>,
@@ -110,11 +110,11 @@ val itemt4 = [
 <endreborn:tool_pickaxe_endorium>
  ] as IItemStack[];
 
-for item in itemt4 {
+for item in item_tools_20 {
     mods.compatskills.Requirement.addRequirement(item, "compatskills:tools|20");
 }
 
-val itemtg = [
+val item_tools_6_magic_8 = [
 <minecraft:golden_hoe>,
 <minecraft:golden_axe>,
 <minecraft:golden_pickaxe>,
@@ -129,11 +129,11 @@ val itemtg = [
 <iceandfire:silver_hoe>
  ] as IItemStack[];
 
-for item in itemtg {
+for item in item_tools_6_magic_8 {
     mods.compatskills.Requirement.addRequirement(item, "and|[compatskills:tools|6]~[reskillable:magic|8]");
 }
 
-val itemtth1= [
+val item_tools_12= [
 <thaumcraft:thaumium_pick>,
 <thaumcraft:thaumium_hoe>,
 <thaumcraft:thaumium_shovel>,
@@ -144,23 +144,23 @@ val itemtth1= [
 <steel_co:steel_shovel>
  ] as IItemStack[];
 
-for item in itemtth1{
+for item in item_tools_12 {
     mods.compatskills.Requirement.addRequirement(item, "compatskills:tools|12");
 }
 
 
-val itemtth2= [
+val item_tools_20_thaum= [
 <thaumcraft:elemental_hoe>,
 <thaumcraft:elemental_pick>,
 <thaumcraft:elemental_shovel>,
 <thaumcraft:elemental_axe>
  ] as IItemStack[];
 
-for item in itemtth2{
+for item in item_tools_20_thaum{
     mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:thaum]~[compatskills:tools|20]");
 }
 
-val itemtth3= [
+val item_tools_32_vthaum= [
 <thaumcraft:primal_crusher>,
 <thaumcraft:void_hoe>,
 <thaumcraft:void_shovel>,
@@ -168,7 +168,7 @@ val itemtth3= [
 <thaumcraft:void_pick>
  ] as IItemStack[];
 
-for item in itemtth3{
+for item in item_tools_32_vthaum {
     mods.compatskills.Requirement.addRequirement(item, "and|[trait|compatskills:vthaum]~[compatskills:tools|32]");
 }
 
@@ -189,7 +189,7 @@ mods.compatskills.Requirement.addRequirement(<minecraft:enchanting_table>, "resk
 
 # BeastMaster lances
 
-val melee_lances_0 = [
+val lances_8 = [
 <spartanweaponryarcana:lance_thaumium>,
 <spartanweaponry:lance_iron>,
 <spartanfire:lance_desert>,
@@ -200,11 +200,11 @@ val melee_lances_0 = [
 <spartanfire:lance_jungle_venom>
 ] as IItemStack[];
 
-for item in melee_lances_0 {
+for item in lances_8 {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|8]~[or|[trait|compatskills:husar]~[trait|compatskills:sword]]");
 }
 
-val melee_lances = [
+val lances_16 = [
 <spartanweaponry:lance_diamond>,
 <spartanfire:lance_dragonbone>,
 <spartanweaponryarcana:lance_voidmetal>,
@@ -213,11 +213,11 @@ val melee_lances = [
 <spartanweaponry:lance_steel>
 ] as IItemStack[];
 
-for item in melee_lances {
+for item in lances_16 {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|16]~[or|[trait|compatskills:husar]~[trait|compatskills:sword]]");
 }
 
-val daggers_0 = [
+val daggers_8 = [
 <spartanweaponryarcana:dagger_thaumium>,
 <spartanweaponry:dagger_gold>,
 <spartanweaponry:dagger_silver>,
@@ -238,11 +238,11 @@ val daggers_0 = [
 <spartanfire:throwing_knife_jungle_venom>
 ] as IItemStack[];
 
-for item in daggers_0 {
+for item in daggers_8 {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|8]~[or|[trait|compatskills:daggers]~[trait|compatskills:sword]]");
 }
 
-val daggers_1 = [
+val daggers_16 = [
 <spartanweaponry:dagger_diamond>,
 <spartanfire:dagger_dragonbone>,
 <spartanweaponryarcana:dagger_voidmetal>,
@@ -258,11 +258,11 @@ val daggers_1 = [
 <spartanweaponry:throwing_knife_steel>
 ] as IItemStack[];
 
-for item in daggers_1 {
+for item in daggers_16 {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|16]~[or|[trait|compatskills:daggers]~[trait|compatskills:sword]]");
 }
 
-val item1ad = [
+val item_attack_16_sword = [
 <spartanweaponry:longsword_diamond>,
 <spartanweaponry:katana_diamond>,
 <spartanweaponry:saber_diamond>,
@@ -287,21 +287,28 @@ val item1ad = [
  ] as IItemStack[];
 //<cavern:hexcite_sword>,
 //<cavern:magnite_sword>
-for item in item1ad {
+for item in item_attack_16_sword {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|16]~[trait|compatskills:sword]");
 }
 
-val item_nep_1 = [
+val item_attack_20_sword = [
 <aquaculture:neptunium_sword>,
 <iceandfire:dragonbone_sword>,
-<endreborn:tool_sword_endorium>
+<endreborn:tool_sword_endorium>,
+<iceandfire:troll_weapon.trunk_frost>,
+<iceandfire:troll_weapon.hammer>,
+<iceandfire:troll_weapon.column_frost>,
+<iceandfire:troll_weapon.trunk>,
+<iceandfire:troll_weapon.axe>,
+<iceandfire:troll_weapon.column_forest>,
+<iceandfire:troll_weapon.column>
 ] as IItemStack[];
 
-for item in item_nep_1 {
+for item in item_attack_20_sword {
      mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|20]~[trait|compatskills:sword]");
 }
 
-val item_drag_1 = [
+val item_attack_24_sword = [
 <spartanfire:katana_dragonbone>,
 <spartanfire:greatsword_dragonbone>,
 <spartanfire:longsword_dragonbone>,
@@ -354,11 +361,11 @@ val item_drag_1 = [
 <spartanweaponryarcana:glaive_thaumium>,
 <spartanweaponryarcana:staff_thaumium>
 ] as IItemStack[];
-for item in item_drag_1 {
+for item in item_attack_24_sword {
      mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|24]~[trait|compatskills:sword]");
 } 
 
-val item1bone = [
+val item_attack_32_sword = [
 <endreborn:ender_sword>,
 <defiledlands:scarlite_reaver>,
 <defiledlands:scarlite_razor>,
@@ -408,21 +415,8 @@ val item1bone = [
 <spartanfire:glaive_ice_dragonbone>
  ] as IItemStack[];
 
-for item in item1bone {
+for item in item_attack_32_sword {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|32]~[trait|compatskills:sword]");
-}
-val itemhw= [
-<iceandfire:troll_weapon.trunk_frost>,
-<iceandfire:troll_weapon.hammer>,
-<iceandfire:troll_weapon.column_frost>,
-<iceandfire:troll_weapon.trunk>,
-<iceandfire:troll_weapon.axe>,
-<iceandfire:troll_weapon.column_forest>,
-<iceandfire:troll_weapon.column>
- ] as IItemStack[];
-
-for item in itemhw {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|20]~[trait|compatskills:sword]");
 }
 /*
 val item1daa = [
@@ -483,7 +477,7 @@ for item in item1daa {
 }
 */
 
-val item43gold= [
+val item_attack_6_magic_8= [
 <minecraft:golden_sword>,
 <spartanweaponry:longsword_gold>,
 <spartanweaponry:katana_gold>,
@@ -522,31 +516,12 @@ val item43gold= [
 <spartanweaponry:staff_silver>
  ] as IItemStack[];
 
-for item in item43gold {
+for item in item_attack_6_magic_8 {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:attack|6]~[reskillable:magic|8]");
 }
-val item2 = [
- <spartanweaponry:spear_stone>,
-<spartanweaponry:staff_stone>,
-<spartanweaponry:glaive_stone>,
-<spartanweaponry:mace_stone>,
-<spartanweaponry:battleaxe_stone>,
-<spartanweaponry:boomerang_stone>,
-<spartanweaponry:javelin_stone>,
-<spartanweaponry:throwing_axe_stone>,
-<minecraft:stone_sword>,
-<spartanweaponry:hammer_stone>,
-<spartanweaponry:greatsword_stone>,
-<spartanweaponry:rapier_stone>,
-<spartanweaponry:saber_stone>,
-<spartanweaponry:katana_stone>,
-<spartanweaponry:longsword_stone>,
-<spartanweaponry:pike_stone>,
-<spartanweaponry:halberd_stone>,
-<spartanweaponry:warhammer_stone>
- ] as IItemStack[];
+
 #armors
-val item1ddd = [
+val item_defense_24_armor = [
 <iceandfire:armor_bronze_helmet>,
 <iceandfire:armor_bronze_chestplate>,
 <iceandfire:armor_bronze_leggings>,
@@ -581,11 +556,11 @@ val item1ddd = [
 <iceandfire:armor_silver_boots>
  ] as IItemStack[];
 
-for item in item1ddd {
+for item in item_defense_24_armor {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:defense|24]~[trait|compatskills:armor]");
 }
 
-val item3sea = [
+val item_defense_22_armor = [
 <iceandfire:tide_blue_helmet>,
 <iceandfire:tide_blue_chestplate>,
 <iceandfire:tide_blue_leggings>,
@@ -616,11 +591,11 @@ val item3sea = [
 <iceandfire:tide_red_boots>
  ] as IItemStack[];
 
-for item in item3sea {
+for item in item_defense_22_armor {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:defense|22]~[trait|compatskills:armor]");
 }
 
-val item1ds = [
+val item_defense_32_armor = [
 <endreborn:armour_helmet_dragon>,
 <endreborn:armour_leggings_dragon>,
 <endreborn:armour_boots_dragon>,
@@ -628,7 +603,8 @@ val item1ds = [
 <forgottenitems:golem_helmet>,
 <forgottenitems:golem_chestplate>,
 <forgottenitems:golem_leggings>,
-<forgottenitems:golem_boots>    
+<forgottenitems:golem_boots>,
+<mysticalworld:antler_hat>
 ] as IItemStack[];
 /*<iceandfire:dragonsteel_fire_helmet>,
 <iceandfire:dragonsteel_fire_chestplate>,
@@ -640,10 +616,10 @@ val item1ds = [
 <iceandfire:dragonsteel_ice_boots>,*/
 
 
-for item in item1ds {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:defense|32]~[trait|compatskills:armorII]");
+for item in item_defense_32_armor {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:defense|32]~[trait|compatskills:armor]");
 }
-val item42= [
+val item_defense_16_armor = [
 <minecraft:diamond_boots>,
 <minecraft:diamond_leggings>,
 <minecraft:diamond_chestplate>,
@@ -665,11 +641,11 @@ val item42= [
 //<cavern:hexcite_chestplate>,
 //<cavern:hexcite_leggings>,
 //<cavern:hexcite_boots>
-for item in item42 {
+for item in item_defense_16_armor {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:defense|16]~[trait|compatskills:armor]");
 }
 
-val steel_melee_all= [
+val item_attack_16_if_sword_8= [
  <spartanweaponry:spear_steel>,
 <spartanweaponry:staff_steel>,
 <spartanweaponry:glaive_steel>,
@@ -690,24 +666,24 @@ val steel_melee_all= [
 <steel_co:steel_sword>
 ] as IItemStack[];
 
-for item in steel_melee_all {
+for item in item_attack_16_if_sword_8 {
     mods.compatskills.Requirement.addRequirement(item, "or|[reskillable:attack|16]~[and|[trait|compatskills:sword]~[reskillable:attack|8]]");
 }
 
-val steel_lock_all= [
+val item_defense_16_if_armor_8= [
 	<steel_co:steel_helmet>,
 	<steel_co:steel_body>,
 	<steel_co:steel_legs>,
 	<steel_co:steel_boots>
 ] as IItemStack[];
 
-for item in steel_lock_all {
+for item in item_defense_16_if_armor_8 {
     mods.compatskills.Requirement.addRequirement(item, "or|[reskillable:defense|16]~[and|[trait|compatskills:armor]~[reskillable:defense|8]]");
 }
 
 
 
-val item43= [
+val item_defense_6_magic_8= [
 <minecraft:golden_boots>,
 <minecraft:golden_leggings>,
 <minecraft:golden_chestplate>,
@@ -718,12 +694,22 @@ val item43= [
 <iceandfire:armor_silver_metal_boots>
  ] as IItemStack[];
 
-for item in item43 {
+for item in item_defense_6_magic_8 {
     mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:defense|6]~[reskillable:magic|8]");
 }
 
+val item_defense_20 = [
+<mysticalworld:copper_chestplate>,
+<mysticalworld:copper_helmet>,
+<mysticalworld:copper_leggings>,
+<mysticalworld:copper_boots>
+ ] as IItemStack[];
 
-val item3worm = [
+for item in item_defense_20 {
+    mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|20");
+}
+
+val item_defense_16 = [
 <iceandfire:deathworm_white_helmet>,
 <iceandfire:deathworm_yellow_boots>,
 <iceandfire:deathworm_yellow_leggings>,
@@ -747,15 +733,14 @@ val item3worm = [
 <iceandfire:mountain_troll_leather_helmet>,
 <iceandfire:mountain_troll_leather_chestplate>,
 <iceandfire:mountain_troll_leather_leggings>,
-<iceandfire:mountain_troll_leather_boots>,
-<mysticalworld:antler_hat>
+<iceandfire:mountain_troll_leather_boots>
  ] as IItemStack[];
 
-for item in item3worm {
+for item in item_defense_16 {
     mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|16");
 }
 
-val item3 = [
+val item_defense_2 = [
  
 <minecraft:leather_helmet>,
 <minecraft:leather_chestplate>,
@@ -764,26 +749,22 @@ val item3 = [
 
  ] as IItemStack[];
 
-for item in item3 {
+for item in item_defense_2 {
     mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|2");
 }
 
-val item4= [
+val item_defense_4= [
  <minecraft:chainmail_boots>,
 <minecraft:chainmail_leggings>,
 <minecraft:chainmail_chestplate>,
 <minecraft:chainmail_helmet>
  ] as IItemStack[];
 
-for item in item4 {
+for item in item_defense_4 {
     mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|4");
 }
 
-val item41= [
-<mysticalworld:copper_chestplate>,
-<mysticalworld:copper_helmet>,
-<mysticalworld:copper_leggings>,
-<mysticalworld:copper_boots>,
+val item_defense_12= [
 <iceandfire:myrmex_jungle_leggings>,
 <iceandfire:myrmex_jungle_chestplate>,
 <iceandfire:myrmex_jungle_boots>,
@@ -798,18 +779,18 @@ val item41= [
 <thaumcraft:thaumium_helm>
  ] as IItemStack[];
 
-for item in item41 {
+for item in item_defense_12 {
     mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|12");
 }
 
-val item_def_8= [
+val item_defense_8 = [
 <minecraft:iron_boots>,
 <minecraft:iron_leggings>,
 <minecraft:iron_chestplate>,
 <minecraft:iron_helmet>
 ] as IItemStack[];
 
-for item in item_def_8 {
+for item in item_defense_8 {
     mods.compatskills.Requirement.addRequirement(item, "reskillable:defense|8");
 }
 
@@ -835,13 +816,11 @@ mods.compatskills.Requirement.addRequirement(<bountifulbaubles:shieldcobalt>, "a
 mods.compatskills.Requirement.addRequirement(<bountifulbaubles:shieldankh>, "and|[reskillable:defense|32]~[trait|compatskills:shield]");
 mods.compatskills.Requirement.addRequirement(<bountifulbaubles:shieldobsidian>, "and|[reskillable:defense|24]~[trait|compatskills:shield]");
 
-
-
 for item in item2 {
     mods.compatskills.Requirement.addRequirement(item, "reskillable:attack|2");
 }
 
-val item5v = [
+val item_attack_8 = [
 <mysticalworld:copper_sword>,
 <minecraft:iron_sword>,
 <spartanweaponry:longsword_iron>,
@@ -954,67 +933,11 @@ val item5v = [
 <spartanweaponryarcana:halberd_thaumium>,
 <spartanweaponryarcana:pike_thaumium>,
 <spartanweaponryarcana:lance_thaumium>,*/
-for item in item5v {
+for item in item_attack_8 {
     mods.compatskills.Requirement.addRequirement(item, "reskillable:attack|8");
 }
 
-
-val item3summspec = [
-
-<iceandfire:myrmex_desert_egg>,
-<iceandfire:myrmex_desert_egg:2>,
-<iceandfire:myrmex_desert_egg:4>,
-<iceandfire:myrmex_jungle_egg:1>,
-<iceandfire:myrmex_jungle_egg:2>,
-<iceandfire:myrmex_jungle_egg:3>,
-<iceandfire:myrmex_jungle_egg:4>,
-<iceandfire:myrmex_desert_egg:1>,
-<iceandfire:myrmex_desert_egg:3>,
-<iceandfire:myrmex_desert_staff>,
-<iceandfire:myrmex_jungle_staff>,
-<iceandfire:myrmex_jungle_egg>
- ] as IItemStack[];
-//<iceandfire:myrmex_desert_swarm>,
-//<iceandfire:myrmex_jungle_swarm>
-
-for item in item3summspec {
-    mods.compatskills.Requirement.addRequirement(item, "trait|compatskills:beast");
-}
-
-
-val itemdrake= [
-<iceandfire:dragon_stick>,
-<iceandfire:sickly_dragon_meal>,
-<iceandfire:dragon_horn>,
-<iceandfire:dragon_flute>,
-<iceandfire:dragon_meal>,
-<iceandfire:fire_stew>,
-<iceandfire:frost_stew>
- ] as IItemStack[];
-
-for item in itemdrake {
-    mods.compatskills.Requirement.addRequirement(item, "trait|compatskills:dragonraider");
-}
-
-
-
-val itembest= [
-<iceandfire:hippogryph_egg>,
-<iceandfire:hippogryph_egg:1>,
-<iceandfire:hippogryph_egg:2>,
-<iceandfire:hippogryph_egg:3>,
-<iceandfire:hippogryph_egg:4>,
-<iceandfire:hippogryph_egg:5>,
-<iceandfire:hippogryph_egg:6>
- ] as IItemStack[];
-
-for item in itembest {
-    mods.compatskills.Requirement.addRequirement(item, "trait|compatskills:beast");
-}
-mods.compatskills.Requirement.addRequirement(<iceandfire:rotten_egg>, "trait|compatskills:beast");
-
-
-val itembow= [
+val item_agility_8_archery= [
 <minecraft:bow>,
 <endreborn:ender_bow>,
 <iceandfire:dragonbone_bow>,
@@ -1033,25 +956,7 @@ val itembow= [
 <spartanweaponry:longbow_leather>,
 <spartanweaponry:longbow_iron>,
 <spartanweaponry:longbow_diamond>,
-<spartanweaponry:longbow_silver>
- ] as IItemStack[];
-/*
-<spartanweaponryarcana:longbow_thaumium>
-<spartanfire:longbow_ice_dragonsteel>,
-<spartanfire:longbow_fire_dragonsteel>,*/
-for item in itembow {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:agility|8]~[trait|compatskills:archery]");
-}
-
-val item_bow_12 = [
-<spartanweaponryarcana:longbow_voidmetal>,
-<spartanweaponryarcana:crossbow_voidmetal>
-] as IItemStack[];
-for item in item_bow_12 {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:agility|32]~[trait|compatskills:archery]");
-}
-
-val itemcbow= [
+<spartanweaponry:longbow_silver>,
 <spartanfire:crossbow_dragonbone>,
 <spartanfire:crossbow_fire_dragonbone>,
 <spartanfire:crossbow_ice_dragonbone>,
@@ -1068,19 +973,26 @@ val itemcbow= [
 <spartanweaponry:crossbow_diamond>,
 <spartanweaponry:crossbow_silver>,
 <spartanweaponry:crossbow_steel>
-
-
  ] as IItemStack[];
 /*
-<spartanweaponryarcana:crossbow_thaumium>
+<spartanfire:longbow_ice_dragonsteel>,
+<spartanfire:longbow_fire_dragonsteel>,
 <spartanfire:crossbow_ice_dragonsteel>,
 <spartanfire:crossbow_fire_dragonsteel>,
 */
-for item in itemcbow {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:agility|20]~[trait|compatskills:archery]");
+for item in item_agility_8_archery {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:agility|8]~[trait|compatskills:archery]");
 }
 
-val itemcbaubleagi= [
+val item_agility_32_archery = [
+<spartanweaponryarcana:longbow_voidmetal>,
+<spartanweaponryarcana:crossbow_voidmetal>
+] as IItemStack[];
+for item in item_agility_32_archery {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:agility|32]~[trait|compatskills:archery]");
+}
+
+val item_agility_12 = [
 <spartanweaponry:quiver_arrow>,
 <spartanweaponry:quiver_arrow_moderate>,
 <spartanweaponry:quiver_arrow_heavy>,
@@ -1090,86 +1002,145 @@ val itemcbaubleagi= [
 <toolbelt:belt>
  ] as IItemStack[];
 
-for item in itemcbaubleagi {
+for item in item_agility_12 {
     mods.compatskills.Requirement.addRequirement(item, "reskillable:agility|12");
 }
 
 mods.compatskills.Requirement.addRequirement(<minecraft:arrow>, "and|[reskillable:attack|8]~[trait|compatskills:archery]");
 mods.compatskills.Requirement.addRequirement(<spartanweaponry:arrow_iron>, "and|[reskillable:attack|16]~[trait|compatskills:archery]");
-mods.compatskills.Requirement.addRequirement(<spartanweaponry:arrow_diamond>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
-mods.compatskills.Requirement.addRequirement(<switchbow:switchbow>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
-mods.compatskills.Requirement.addRequirement(<switchbow:switchcrossbow>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
-mods.compatskills.Requirement.addRequirement(<srparasites:weapon_bow>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
-mods.compatskills.Requirement.addRequirement(<srparasites:weapon_bow_sentient>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
-mods.compatskills.Requirement.addRequirement(<spartanweaponry:arrow_explosive>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
+mods.compatskills.Requirement.addRequirement(<spartanweaponry:arrow_diamond>, "and|[reskillable:attack|32]~[trait|compatskills:archery]");
+mods.compatskills.Requirement.addRequirement(<switchbow:switchbow>, "and|[reskillable:attack|32]~[trait|compatskills:archery]");
+mods.compatskills.Requirement.addRequirement(<switchbow:switchcrossbow>, "and|[reskillable:attack|32]~[trait|compatskills:archery]");
+mods.compatskills.Requirement.addRequirement(<srparasites:weapon_bow>, "and|[reskillable:attack|32]~[trait|compatskills:archery]");
+mods.compatskills.Requirement.addRequirement(<srparasites:weapon_bow_sentient>, "and|[reskillable:attack|32]~[trait|compatskills:archery]");
+mods.compatskills.Requirement.addRequirement(<spartanweaponry:arrow_explosive>, "and|[reskillable:attack|32]~[trait|compatskills:archery]");
 mods.compatskills.Requirement.addRequirement(<spartanweaponry:bolt>, "and|[reskillable:attack|8]~[trait|compatskills:archery]");
 mods.compatskills.Requirement.addRequirement(<spartanweaponry:bolt_diamond>, "and|[reskillable:attack|16]~[trait|compatskills:archery]");
-mods.compatskills.Requirement.addRequirement(<spartanweaponry:bolt_spectral>, "and|[reskillable:attack|32]~[trait|compatskills:archeryII]");
+mods.compatskills.Requirement.addRequirement(<spartanweaponry:bolt_spectral>, "and|[reskillable:attack|32]~[trait|compatskills:archery]");
 
 #beastmaster
-val itemtreatd= [
-<lycanitesmobs:soulstone_demon>,
-<lycanitesmobs:soulstone_undead>,
-<lycanitesmobs:soulstone_imp>,
-<lycanitesmobs:soulstone_aquatic>,
-<lycanitesmobs:soulstone_dragon>,
-<lycanitesmobs:soulstone_aberration>,
-<lycanitesmobs:soulstone>,
-<lycanitesmobs:soulstone_plant>,
-<lycanitesmobs:soulstone_worm>,
-<lycanitesmobs:soulstone_angel>,
-<lycanitesmobs:soulstone_avian>,
-<lycanitesmobs:soulstone_arachnid>,
-<lycanitesmobs:soulstone_elemental>,
-<lycanitesmobs:soulstone_reptile>,
-<lycanitesmobs:soulstone_anthronian>,
-<lycanitesmobs:soulstone_golem>,
-<lycanitesmobs:soulstone_insect>,
-<lycanitesmobs:soulstone_amphibian>,
-<lycanitesmobs:soulstone_slime>,
-<lycanitesmobs:soulstone_beast>
- ] as IItemStack[];
-/*
-<lycanitesmobs:soulstone_brute>,
-<lycanitesmobs:soulstone_arthropod>,
-*/
 
-for item in itemtreatd {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|32]~[trait|compatskills:dragonraider]");
+val item_tamer = [
+<iceandfire:myrmex_desert_egg>,
+<iceandfire:myrmex_desert_egg:2>,
+<iceandfire:myrmex_desert_egg:4>,
+<iceandfire:myrmex_jungle_egg:1>,
+<iceandfire:myrmex_jungle_egg:2>,
+<iceandfire:myrmex_jungle_egg:3>,
+<iceandfire:myrmex_jungle_egg:4>,
+<iceandfire:myrmex_desert_egg:1>,
+<iceandfire:myrmex_desert_egg:3>,
+<iceandfire:myrmex_desert_staff>,
+<iceandfire:myrmex_jungle_staff>,
+<iceandfire:myrmex_jungle_egg>,
+<iceandfire:rotten_egg>,
+<lycanitesmobs:undeadtreat>,
+<lycanitesmobs:amphibiantreat>,
+<lycanitesmobs:insecttreat>,
+<lycanitesmobs:imptreat>
+] as IItemStack[];
+
+for item in item_tamer {
+    mods.compatskills.Requirement.addRequirement(item, "trait|compatskills:tamer");
 }
 
-mods.compatskills.Requirement.addRequirement(<lycanitesmobs:dragontreat>, "trait|compatskills:dragonraider");
+#tameable
+mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:wolf>, "trait|compatskills:tamer");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:hippocampus>, "trait|compatskills:tamer");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:horse>, "trait|compatskills:tamer");
 
-val itemtreatn= [
+
+val item_beast = [
+<iceandfire:hippogryph_egg>,
+<iceandfire:hippogryph_egg:1>,
+<iceandfire:hippogryph_egg:2>,
+<iceandfire:hippogryph_egg:3>,
+<iceandfire:hippogryph_egg:4>,
+<iceandfire:hippogryph_egg:5>,
+<iceandfire:hippogryph_egg:6>,
 <lycanitesmobs:planttreat>,
-<lycanitesmobs:undeadtreat>,
-<lycanitesmobs:demontreat>,
-<lycanitesmobs:imptreat>,
-<lycanitesmobs:aberrationtreat>,
-<lycanitesmobs:aviantreat>,
 <lycanitesmobs:slimetreat>,
 <lycanitesmobs:elementaltreat>,
-<lycanitesmobs:insecttreat>,
 <lycanitesmobs:halloweentreat>,
 <lycanitesmobs:angeltreat>,
 <lycanitesmobs:anthroniantreat>,
 <lycanitesmobs:golemtreat>,
-<lycanitesmobs:amphibiantreat>,
 <lycanitesmobs:arachnidtreat>,
-<lycanitesmobs:reptiletreat>,
 <lycanitesmobs:wormtreat>,
 <lycanitesmobs:aquatictreat>
  ] as IItemStack[];
+//<iceandfire:myrmex_desert_swarm>,
+//<iceandfire:myrmex_jungle_swarm>
 /*
 <lycanitesmobs:brutetreat>,
 <lycanitesmobs:arthropodtreat>,
 
 */
-for item in itemtreatn {
+for item in item_beast {
     mods.compatskills.Requirement.addRequirement(item, "trait|compatskills:beast");
 }
 
-val itemtreatdsumm= [
+#Beast
+mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:hippogryph>, "trait|compatskills:beast");
+mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:amphithere>, "trait|compatskills:beast");
+
+val item_dragonrider= [
+<iceandfire:dragon_stick>,
+<iceandfire:sickly_dragon_meal>,
+<iceandfire:dragon_horn>,
+<iceandfire:dragon_flute>,
+<iceandfire:dragon_meal>,
+<iceandfire:fire_stew>,
+<iceandfire:frost_stew>,
+<lycanitesmobs:dragontreat>,
+<lycanitesmobs:demontreat>,
+<lycanitesmobs:aberrationtreat>,
+<lycanitesmobs:aviantreat>,
+<lycanitesmobs:reptiletreat>,
+<lycanitesmobs:beasttreat>
+ ] as IItemStack[];
+
+for item in item_dragonrider {
+    mods.compatskills.Requirement.addRequirement(item, "trait|compatskills:dragonraider");
+}
+
+val item_soulbinder = [
+<lycanitesmobs:soulstone_undead>,
+<lycanitesmobs:soulstone_imp>,
+<lycanitesmobs:soulstone_insect>,
+<lycanitesmobs:soulstone_amphibian>
+] as IItemStack[];
+
+for item in item_soulbinder {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|16]~[trait|compatskills:soulbinder]");
+}
+
+val item_beastbinder = [
+<lycanitesmobs:soulstone_anthronian>,
+<lycanitesmobs:soulstone_aquatic>,
+<lycanitesmobs:soulstone_plant>,
+<lycanitesmobs:soulstone_worm>,
+<lycanitesmobs:soulstone_demon>
+] as IItemStack[];
+
+for item in item_beastbinder {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|24]~[trait|compatskills:beastbinder]");
+}
+
+val item_dragonbinder = [
+<lycanitesmobs:soulstone_avian>,
+<lycanitesmobs:soulstone_beast>,
+<lycanitesmobs:soulstone_dragon>,
+<lycanitesmobs:soulstone_aberration>,
+<lycanitesmobs:soulstone_reptile>,
+<lycanitesmobs:soulstone>
+] as IItemStack[];
+
+for item in item_dragonbinder {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|32]~[trait|compatskills:dragonbinder]");
+}
+
+val item_summoner= [
 <lycanitesmobs:bloodsummoningstaff>,
 <lycanitesmobs:summoningstaff>,
 <lycanitesmobs:stablesummoningstaff>,
@@ -1178,20 +1149,9 @@ val itemtreatdsumm= [
 <lycanitesmobs:summoningpedestal>
  ] as IItemStack[];
 
-for item in itemtreatdsumm {
-    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|20]~[trait|compatskills:beast]");
+for item in item_summoner {
+    mods.compatskills.Requirement.addRequirement(item, "and|[reskillable:magic|20]~[trait|compatskills:summoner]");
 }
-
-
-mods.compatskills.Requirement.addRequirement(<lycanitesmobs:beasttreat>, "trait|compatskills:tamer");
-
-#tameable
-mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:wolf>, "trait|compatskills:tamer");
-mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:hippocampus>, "trait|compatskills:tamer");
-mods.compatskills.AnimalTameLock.addTameLock(<entity:minecraft:horse>, "trait|compatskills:tamer");
-
-mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:hippogryph>, "trait|compatskills:beast");
-mods.compatskills.AnimalTameLock.addTameLock(<entity:iceandfire:amphithere>, "trait|compatskills:beast");
 
 #alchemist
 
