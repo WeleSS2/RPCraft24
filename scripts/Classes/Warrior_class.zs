@@ -132,18 +132,26 @@ swordMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("Checking weapon for Sword Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "swordMaster") weaponCheck=true;
+        print("Found ore: " + ore.name);
+        if(ore.name == "swordMaster") {
+            weaponCheck=true;
+            break;
+        }
     }
 
+    print("Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
         e.amount=e.amount/4.0;
+        print("Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
     e.amount = e.amount+4.0;
     e.entityLivingBase.addPotionEffect(<potion:minecraft:wither>.makePotionEffect(100,0));
+    print("Applied Sword Master bonus damage and wither effect.");
 };
 
 val saberMasterWeapon = mods.compatskills.TraitCreator.createTrait("saberMaster", 1, 0, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -158,18 +166,26 @@ saberMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("Checking weapon for Saber Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "saberMaster") weaponCheck=true;
+        print("Found ore: " + ore.name);
+        if(ore.name == "saberMaster") {
+            weaponCheck=true;
+            break;
+        }
     }
 
+    print("Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
         e.amount=e.amount/4.0;
+        print("Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
     e.amount = e.amount*1.5;
     e.entityLivingBase.addPotionEffect(<potion:minecraft:wither>.makePotionEffect(100,0));
+    print("Applied Saber Master bonus damage and wither effect.");
 };
 
 val katanaMasterWeapon = mods.compatskills.TraitCreator.createTrait("katanaMaster", 2, 0, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -184,18 +200,26 @@ katanaMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("Checking weapon for Katana Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "katanaMaster") weaponCheck=true;
+        print("Found ore: " + ore.name);
+        if(ore.name == "katanaMaster") {
+            weaponCheck=true;
+            break;
+        }
     }
 
+    print("Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
         e.amount=e.amount/4.0;
+        print("Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
     e.amount = e.amount+4.0;
     if(player.world.random.nextInt(5)==0)e.entityLivingBase.addPotionEffect(<potion:lycanitesmobs:paralysis>.makePotionEffect(60,0));
+    print("Applied Katana Master bonus damage and paralysis effect.");
 };
 
 val rapierMasterWeapon = mods.compatskills.TraitCreator.createTrait("rapierMaster", 3, 0, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -210,18 +234,26 @@ rapierMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("Checking weapon for Rapier Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "rapierMaster") weaponCheck=true;
+        print("Found ore: " + ore.name);
+        if(ore.name == "rapierMaster") {
+            weaponCheck=true;
+            break;
+        }
     }
 
+    print("Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
         e.amount=e.amount/4.0;
+        print("Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
     e.amount = e.amount*1.5;
     if(player.world.random.nextInt(10)==0) stripArmor(e.entityLivingBase, player);
+    print("Applied Rapier Master bonus damage and armor strip effect.");
 };
 
 function stripArmor(target as IEntityLivingBase, player as IPlayer) as void {
@@ -278,18 +310,26 @@ battleaxeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("Checking weapon for Battleaxe Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "battleaxeMaster") weaponCheck=true;
+        print("Found ore: " + ore.name);
+        if(ore.name == "battleaxeMaster") {
+            weaponCheck=true;
+            break;
+        }
     }
 
+    print("Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
         e.amount=e.amount/4.0;
+        print("Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
     e.amount = e.amount*1.5;
     e.entityLivingBase.addPotionEffect(<potion:minecraft:wither>.makePotionEffect(100,1));
+    print("Applied Battleaxe Master bonus damage and wither effect.");
 };
 
 val longswordMasterWeapon = mods.compatskills.TraitCreator.createTrait("longswordMaster", 0, 1, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -298,24 +338,34 @@ longswordMasterWeapon.description = "Bonus 50% dmg and 10% chance fear to nearby
 longswordMasterWeapon.icon = "spartanfire:textures/items/longsword_dragon.png";
 
 longswordMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHurtEvent) {
-    if(isNull(e.entityLivingBase)
-    || e.entityLivingBase.world.isRemote()) return;
+    if(isNull(e.entityLivingBase) || e.entityLivingBase.world.isRemote()) return;
 
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Longsword Master] Checking weapon for Longsword Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "longswordMaster") weaponCheck=true;
+        print("[Longsword Master] Found ore: " + ore.name);
+        if(ore.name == "longswordMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Longsword Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Longsword Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
-    if(player.world.random.nextInt(10)==0)e.entityLivingBase.addPotionEffect(<potion:lycanitesmobs:fear>.makePotionEffect(100,0));
+    e.amount = e.amount * 1.5;
+    if(player.world.random.nextInt(10) == 0) {
+        e.entityLivingBase.addPotionEffect(<potion:lycanitesmobs:fear>.makePotionEffect(100,0));
+        print("[Longsword Master] Applied fear effect to the target.");
+    }
+    print("[Longsword Master] Applied Longsword Master bonus damage.");
 };
 
 val greatswordMasterWeapon = mods.compatskills.TraitCreator.createTrait("greatswordMaster", 1, 1, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -324,24 +374,31 @@ greatswordMasterWeapon.description = "Bonus +4 dmg and 10% chance fear to nearby
 greatswordMasterWeapon.icon = "spartanfire:textures/items/greatsword_dragon.png";
 
 greatswordMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHurtEvent) {
-    if(isNull(e.entityLivingBase)
-    || e.entityLivingBase.world.isRemote()) return;
+    if(isNull(e.entityLivingBase) || e.entityLivingBase.world.isRemote()) return;
 
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Greatsword Master] Checking weapon for Greatsword Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "greatswordMaster") weaponCheck=true;
+        print("[Greatsword Master] Found ore: " + ore.name);
+        if(ore.name == "greatswordMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Greatsword Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Greatsword Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount+4.0;
-    if(player.world.random.nextInt(10)==0)e.entityLivingBase.addPotionEffect(<potion:lycanitesmobs:fear>.makePotionEffect(100,0));
+    e.amount = e.amount + 4.0;
+    if(player.world.random.nextInt(10) == 0) e.entityLivingBase.addPotionEffect(<potion:lycanitesmobs:fear>.makePotionEffect(100,0));
+    print("[Greatsword Master] Applied Greatsword Master bonus damage and potential fear effect.");
 };
 
 val maceMasterWeapon = mods.compatskills.TraitCreator.createTrait("maceMaster", 2, 1, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -350,24 +407,31 @@ maceMasterWeapon.description = "Bonus 50% dmg and vulnerable for 5 sec.";
 maceMasterWeapon.icon = "spartanfire:textures/items/mace_dragon.png";
 
 maceMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHurtEvent) {
-    if(isNull(e.entityLivingBase)
-    || e.entityLivingBase.world.isRemote()) return;
+    if(isNull(e.entityLivingBase) || e.entityLivingBase.world.isRemote()) return;
 
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Mace Master] Checking weapon for Mace Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "maceMaster") weaponCheck=true;
+        print("[Mace Master] Found ore: " + ore.name);
+        if(ore.name == "maceMaster") {
+            weaponCheck=true;
+            break;
+        }
     }
 
+    print("[Mace Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
         e.amount=e.amount/4.0;
+        print("[Mace Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
     e.amount = e.amount*1.5;
     e.entityLivingBase.addPotionEffect(<potion:potioncore:vulnerable>.makePotionEffect(100,0));
+    print("[Mace Master] Applied Mace Master bonus damage and vulnerable effect.");
 };
 
 val hammerMasterWeapon = mods.compatskills.TraitCreator.createTrait("hammerMaster", 3, 1, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -376,24 +440,31 @@ hammerMasterWeapon.description = "Bonus 50% dmg and weight effect for 5 sec.";
 hammerMasterWeapon.icon = "spartanfire:textures/items/hammer_dragon.png";
 
 hammerMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHurtEvent) {
-    if(isNull(e.entityLivingBase)
-    || e.entityLivingBase.world.isRemote()) return;
+    if(isNull(e.entityLivingBase) || e.entityLivingBase.world.isRemote()) return;
 
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Hammer Master] Checking weapon for Hammer Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "hammerMaster") weaponCheck=true;
+        print("[Hammer Master] Found ore: " + ore.name);
+        if(ore.name == "hammerMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Hammer Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Hammer Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
+    e.amount = e.amount * 1.5;
     e.entityLivingBase.addPotionEffect(<potion:lycanitesmobs:weight>.makePotionEffect(100,0));
+    print("[Hammer Master] Applied Hammer Master bonus damage and weight effect.");
 };
 
 val warhammerMasterWeapon = mods.compatskills.TraitCreator.createTrait("warhammerMaster", 4, 1, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -408,18 +479,26 @@ warhammerMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Warhammer Master] Checking weapon for Warhammer Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "warhammerMaster") weaponCheck=true;
+        print("[Warhammer Master] Found ore: " + ore.name);
+        if(ore.name == "warhammerMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Warhammer Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Warhammer Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
+    e.amount = e.amount * 1.5;
     e.entityLivingBase.addPotionEffect(<potion:potioncore:broken_armor>.makePotionEffect(100,0));
+    print("[Warhammer Master] Applied Warhammer Master bonus damage and armor penetration effect.");
 };
 
 val pikeMasterWeapon = mods.compatskills.TraitCreator.createTrait("pikeMaster", 0, 2, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -428,24 +507,31 @@ pikeMasterWeapon.description = "Bonus 50% dmg and blindness for 5 sec.";
 pikeMasterWeapon.icon = "spartanfire:textures/items/pike_dragon.png";
 
 pikeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHurtEvent) {
-    if(isNull(e.entityLivingBase)
-    || e.entityLivingBase.world.isRemote()) return;
+    if(isNull(e.entityLivingBase) || e.entityLivingBase.world.isRemote()) return;
 
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Pike Master] Checking weapon for Pike Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "pikeMaster") weaponCheck=true;
+        print("[Pike Master] Found ore: " + ore.name);
+        if(ore.name == "pikeMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Pike Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Pike Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
+    e.amount = e.amount * 1.5;
     e.entityLivingBase.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100,0));
+    print("[Pike Master] Applied Pike Master bonus damage and blindness effect.");
 };
 
 val halberdMasterWeapon = mods.compatskills.TraitCreator.createTrait("halberdMaster", 1, 2, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -460,18 +546,26 @@ halberdMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingH
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Halberd Master] Checking weapon for Halberd Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "halberdMaster") weaponCheck=true;
+        print("[Halberd Master] Found ore: " + ore.name);
+        if(ore.name == "halberdMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Halberd Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Halberd Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
+    e.amount = e.amount * 1.5;
     e.entityLivingBase.addPotionEffect(<potion:potioncore:broken_armor>.makePotionEffect(100,0));
+    print("[Halberd Master] Applied Halberd Master bonus damage and armor penetration effect.");
 };
 
 val spearMasterWeapon = mods.compatskills.TraitCreator.createTrait("spearMaster", 2, 2, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -486,18 +580,26 @@ spearMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Spear Master] Checking weapon for Spear Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "spearMaster") weaponCheck=true;
+        print("[Spear Master] Found ore: " + ore.name);
+        if(ore.name == "spearMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Spear Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Spear Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
+    e.amount = e.amount * 1.5;
     e.entityLivingBase.addPotionEffect(<potion:minecraft:blindness>.makePotionEffect(100,0));
+    print("[Spear Master] Applied Spear Master bonus damage and blindness effect.");
 };
 
 val glaiveMasterWeapon = mods.compatskills.TraitCreator.createTrait("glaiveMaster", 3, 2, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -512,18 +614,26 @@ glaiveMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHu
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Glaive Master] Checking weapon for Glaive Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "glaiveMaster") weaponCheck=true;
+        print("[Glaive Master] Found ore: " + ore.name);
+        if(ore.name == "glaiveMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Glaive Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Glaive Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
+    e.amount = e.amount * 1.5;
     e.entityLivingBase.addPotionEffect(<potion:lycanitesmobs:penetration>.makePotionEffect(100,0));
+    print("[Glaive Master] Applied Glaive Master bonus damage and penetration effect.");
 };
 
 val staffMasterWeapon = mods.compatskills.TraitCreator.createTrait("staffMaster", 4, 2, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -538,18 +648,26 @@ staffMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingHur
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Staff Master] Checking weapon for Staff Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "staffMaster") weaponCheck=true;
+        print("[Staff Master] Found ore: " + ore.name);
+        if(ore.name == "staffMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Staff Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Staff Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
+    e.amount = e.amount * 1.5;
     e.entityLivingBase.addPotionEffect(<potion:lycanitesmobs:weight>.makePotionEffect(100,0));
+    print("[Staff Master] Applied bonus damage and weight effect.");
 };
 
 val throwingKnifeMasterWeapon = mods.compatskills.TraitCreator.createTrait("throwingKnifeMaster", 0, 3, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -564,18 +682,26 @@ throwingKnifeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityL
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Throwing Knife Master] Checking weapon for Throwing Knife Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "throwingKnifeMaster") weaponCheck=true;
+        print("[Throwing Knife Master] Found ore: " + ore.name);
+        if(ore.name == "throwingKnifeMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Throwing Knife Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Throwing Knife Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
+    e.amount = e.amount * 1.5;
     e.entityLivingBase.addPotionEffect(<potion:minecraft:weakness>.makePotionEffect(100,2));
+    print("[Throwing Knife Master] Applied bonus damage and weakness effect.");
 };
 
 val throwingAxeMasterWeapon = mods.compatskills.TraitCreator.createTrait("throwingAxeMaster", 1, 3, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -590,18 +716,26 @@ throwingAxeMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLiv
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Throwing Axe Master] Checking weapon for Throwing Axe Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "throwingAxeMaster") weaponCheck=true;
+        print("[Throwing Axe Master] Found ore: " + ore.name);
+        if(ore.name == "throwingAxeMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Throwing Axe Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Throwing Axe Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
+    e.amount = e.amount * 1.5;
     e.entityLivingBase.addPotionEffect(<potion:lycanitesmobs:smited>.makePotionEffect(100,0));
+    print("[Throwing Axe Master] Applied bonus damage and smited effect.");
 };
 
 val javelinMasterWeapon = mods.compatskills.TraitCreator.createTrait("javelinMaster", 3, 3, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -616,18 +750,26 @@ javelinMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivingH
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Javelin Master] Checking weapon for Javelin Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "javelinMaster") weaponCheck=true;
+        print("[Javelin Master] Found ore: " + ore.name);
+        if(ore.name == "javelinMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Javelin Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Javelin Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
-    if(player.world.random.nextInt(2)==0) e.entityLivingBase.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1,0));
+    e.amount = e.amount * 1.5;
+    if(player.world.random.nextInt(2) == 0) e.entityLivingBase.addPotionEffect(<potion:potioncore:lightning>.makePotionEffect(1,0));
+    print("[Javelin Master] Applied bonus damage and potential lightning effect.");
 };
 
 val boomerangMasterWeapon = mods.compatskills.TraitCreator.createTrait("boomerangMaster", 4, 3, "compatskills:weaponMasteryTab", 1, "trait|compatskills:weaponMastery");
@@ -642,18 +784,26 @@ boomerangMasterWeapon.onAttackMob = function(e as crafttweaker.event.EntityLivin
     if(!e.damageSource.trueSource instanceof IPlayer) return;
     val player as IPlayer = e.damageSource.trueSource;
     
+    print("[Boomerang Master] Checking weapon for Boomerang Master trait.");
     var weaponCheck = false;
     for ore in player.mainHandHeldItem.ores {
-        if(ore.name == "boomerangMaster") weaponCheck=true;
+        print("[Boomerang Master] Found ore: " + ore.name);
+        if(ore.name == "boomerangMaster") {
+            weaponCheck = true;
+            break;
+        }
     }
 
+    print("[Boomerang Master] Weapon check result: " + weaponCheck);
     if(!weaponCheck) {
-        e.amount=e.amount/4.0;
+        e.amount = e.amount / 4.0;
+        print("[Boomerang Master] Player does not have the correct weapon. Reducing damage.");
         return;
     }
 
-    e.amount = e.amount*1.5;
-    if(player.world.random.nextInt(2)==0) e.entityLivingBase.addPotionEffect(<potion:potioncore:explode>.makePotionEffect(100,0));
+    e.amount = e.amount * 1.5;
+    if(player.world.random.nextInt(2) == 0) e.entityLivingBase.addPotionEffect(<potion:potioncore:explode>.makePotionEffect(100,0));
+    print("[Boomerang Master] Applied bonus damage and potential small explosion effect.");
 };
 
 # Tank Specialisation
