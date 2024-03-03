@@ -38,7 +38,7 @@
       {
         "name": "quality.dented.name",
         "color": "dark_gray",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.armor",
@@ -50,7 +50,7 @@
       {
         "name": "quality.heavy.name",
         "color": "red",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.movementSpeed",
@@ -61,12 +61,12 @@
       },
       {
         "name": "normal",
-        "weight": 100
+        "weight": 200
       },
       {
         "name": "quality.thick.name",
         "color": "yellow",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.armor",
@@ -75,7 +75,7 @@
           },
           {
             "name": "generic.movementSpeed",
-            "amount": -0.05,
+            "amount": -0.02,
             "operation": 2
           }
         ]
@@ -83,11 +83,11 @@
       {
         "name": "quality.tough.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.armorToughness",
-            "amount": 1,
+            "amount": 0.5,
             "operation": 0
           }
         ]
@@ -95,11 +95,11 @@
       {
         "name": "quality.protective.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.armor",
-            "amount": 0.5,
+            "amount": 1,
             "operation": 0
           }
         ]
@@ -107,7 +107,7 @@
       {
         "name": "quality.arcane.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "potioncore.magicShielding",
@@ -119,7 +119,7 @@
       {
         "name": "quality.tall.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "potioncore.stepHeight",
@@ -131,11 +131,11 @@
       {
         "name": "quality.speedy.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.movementSpeed",
-            "amount": 0.1,
+            "amount": 0.05,
 			   "operation": 2
           }
         ]
@@ -147,12 +147,12 @@
         "attributes": [
           {
             "name": "generic.armor",
-            "amount": 0.5,
+            "amount": 1,
             "operation": 0
           },
           {
             "name": "generic.armorToughness",
-            "amount": 1,
+            "amount": 0.5,
             "operation": 0
           },
           {
@@ -162,8 +162,35 @@
           },
           {
             "name": "generic.movementSpeed",
-            "amount": 0.1,
+            "amount": 0.05,
             "operation": 2
+          },
+          {
+            "name": "Legendary",
+            "color": "yellow",
+            "weight": 1,
+            "attributes": [
+              {
+                "name": "generic.armor",
+                "amount": 2,
+                "operation": 0
+              },
+              {
+                "name": "generic.armorToughness",
+                "amount": 1,
+                "operation": 0
+              },
+              {
+                "name": "potioncore.stepHeight",
+                "amount": 0.5,
+                "operation": 0
+              },
+              {
+                "name": "generic.movementSpeed",
+                "amount": 0.05,
+                "operation": 2
+              }
+            ]
           }
         ]
       }

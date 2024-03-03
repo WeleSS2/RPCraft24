@@ -43,7 +43,7 @@
       {
         "name": "quality.dented.name",
         "color": "dark_gray",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.armor",
@@ -55,7 +55,7 @@
       {
         "name": "quality.heavy.name",
         "color": "red",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.movementSpeed",
@@ -66,12 +66,12 @@
       },
       {
         "name": "normal",
-        "weight": 100
+        "weight": 200
       },
       {
         "name": "quality.thick.name",
         "color": "yellow",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.armor",
@@ -88,7 +88,7 @@
       {
         "name": "quality.tough.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.armorToughness",
@@ -100,7 +100,7 @@
       {
         "name": "quality.protective.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.armor",
@@ -112,7 +112,7 @@
       {
         "name": "quality.arcane.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "potioncore.magicShielding",
@@ -124,7 +124,7 @@
       {
         "name": "quality.lucky.name",
         "color": "aqua",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.luck",
@@ -140,7 +140,29 @@
         "attributes": [
           {
             "name": "generic.armor",
+            "amount": 1,
+            "operation": 0
+          },
+          {
+            "name": "generic.armorToughness",
             "amount": 0.5,
+            "operation": 0
+          },
+          {
+            "name": "generic.luck",
+            "amount": 0.5,
+            "operation": 0
+          }
+        ]
+      },
+      {
+        "name": "Legendary",
+        "color": "yellow",
+        "weight": 1,
+        "attributes": [
+          {
+            "name": "generic.armor",
+            "amount": 2,
             "operation": 0
           },
           {

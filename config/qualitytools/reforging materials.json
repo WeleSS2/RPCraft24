@@ -8,7 +8,7 @@
                 https://bitbucket.org/Tmtravlr/qualitytools/wiki/Home",
     "tool": "any",
     "material": {
-        "item": "minecraft:nether_star"
+        "item": "minecraft:emerald"
     }
   },
   {
@@ -2603,5 +2603,1061 @@
     "material": {
         "item": "iceandfire:myrmex_desert_chitin"
     }
-  }
+  },
+  {
+    "tool": {
+        "item": "endreborn:armour_helmet_helmet"
+    },
+    "material": {
+        "item": "endreborn:item_shard_obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "endreborn:armour_chestplate_obsidian"
+    },
+    "material": {
+        "item": "endreborn:item_shard_obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "endreborn:armour_leggings_obsidian"
+    },
+    "material": {
+        "item": "endreborn:item_shard_obsidian"
+    }
+  },
+  {
+    "tool": {
+        "item": "endreborn:armour_boots_obsidian"
+    },
+    "material": {
+        "item": "endreborn:item_shard_obsidian"
+    }
+  },
+  { 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_boots_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_boots_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_boots_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_boots_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_boots_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_boots_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_boots_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_boots_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_boots_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_boots_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_boots_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_boots_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_boots_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_boots_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_boots_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_boots_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_boots_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_boots_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_boots_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_boots_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_boots_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_boots_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_boots_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_boots_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_boots_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_boots_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_boots_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_boots_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_boots" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_boots" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_boots" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_boots" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_leggings_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_leggings_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_leggings_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_leggings_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_leggings_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_leggings_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_leggings_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_leggings_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_leggings_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_leggings_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_leggings_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_leggings_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_leggings_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_leggings_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_leggings_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_leggings_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_leggings_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_leggings_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_leggings_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_leggings_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_leggings_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_leggings_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_leggings_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_leggings_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_leggings_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_leggings_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_leggings_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_leggings_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_leggings" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_leggings" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_leggings" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_leggings" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_helmet_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_helmet_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_helmet_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_helmet_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_helmet_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_helmet_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_helmet_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_helmet" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_robe_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_robe_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_robe_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_robe_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_robe_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_robe_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_robe_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_robe_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_robe_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_robe_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_robe_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_robe_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_robe_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_robe_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_robe_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_robe_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_robe_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_robe_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_robe_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_robe_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_robe_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_robe" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_robe" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_robe" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_hat_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_hat_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_hat_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_hat_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_hat_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_hat_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_hat_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_hat_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_hat_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_hat_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_hat_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_hat_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_hat_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_hat_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:sage_hat" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:wizard_hat" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_hood_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_hood_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_hood_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_hood_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_hood_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_hood_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_hood_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:warlock_hood" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_chestplate_sorcery" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_chestplate_healing" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_chestplate_necromancy" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_chestplate_earth" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_chestplate_lightning" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_chestplate_ice" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_chestplate_fire" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ },
+{ 
+ 	 "tool": { 
+ 	 "item": "ebwizardry:battlemage_chestplate" 
+ 	 }, 
+ 	 "material": { 
+ 	 "item": "ebwizardry:magic_silk" 
+ 	 } 
+ }
 ]
