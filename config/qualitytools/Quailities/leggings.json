@@ -87,7 +87,7 @@
         "attributes": [
           {
             "name": "generic.armorToughness",
-            "amount": 1,
+            "amount": 0.5,
             "operation": 0
           }
         ]

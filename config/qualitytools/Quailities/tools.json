@@ -30,7 +30,7 @@
       {
         "name": "quality.worthless.name",
         "color": "dark_red",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -57,7 +57,7 @@
       {
         "name": "quality.broken.name",
         "color": "dark_gray",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -69,7 +69,7 @@
       {
         "name": "quality.bulky.name",
         "color": "dark_gray",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackSpeed",
@@ -86,7 +86,7 @@
       {
         "name": "quality.rusted.name",
         "color": "red",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -103,7 +103,7 @@
       {
         "name": "quality.clumsy.name",
         "color": "red",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackSpeed",
@@ -120,7 +120,7 @@
       {
         "name": "quality.chipped.name",
         "color": "red",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackSpeed",
@@ -137,7 +137,7 @@
       {
         "name": "quality.short.name",
         "color": "red",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.reachDistance",
@@ -148,12 +148,12 @@
       },
       {
         "name": "normal",
-        "weight": 100
+        "weight": 200
       },
       {
         "name": "quality.broad.name",
         "color": "yellow",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -175,7 +175,7 @@
       {
         "name": "quality.thin.name",
         "color": "yellow",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -192,7 +192,7 @@
       {
         "name": "quality.pokey.name",
         "color": "yellow",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -209,7 +209,7 @@
       {
         "name": "quality.vicious.name",
         "color": "yellow",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -226,7 +226,7 @@
       {
         "name": "quality.long.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.reachDistance",
@@ -238,7 +238,7 @@
       {
         "name": "quality.sharp.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -250,7 +250,7 @@
       {
         "name": "quality.keen.name",
         "color": "blue",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.attackDamage",
@@ -267,7 +267,7 @@
       {
         "name": "quality.graceful.name",
         "color": "aqua",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "potioncore.digSpeed",
@@ -284,7 +284,7 @@
       {
         "name": "quality.sweeping.name",
         "color": "aqua",
-        "weight": 10,
+        "weight": 20,
         "attributes": [
           {
             "name": "generic.reachDistance",
@@ -299,7 +299,7 @@
         ]
       },
       {
-        "name": "quality.legendary.name",
+        "name": "Masterful",
         "color": "light_purple",
         "weight": 5,
         "attributes": [
@@ -321,6 +321,33 @@
           {
             "name": "generic.attackSpeed",
             "amount": 0.1,
+            "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "Legendary",
+        "color": "yellow",
+        "weight": 1,
+        "attributes": [
+          {
+            "name": "generic.attackDamage",
+            "amount": 0.25,
+            "operation": 2
+          },
+          {
+            "name": "potioncore.digSpeed",
+            "amount": 0.2,
+            "operation": 2
+          },
+          {
+            "name": "generic.reachDistance",
+            "amount": 0.75,
+            "operation": 0
+          },
+          {
+            "name": "generic.attackSpeed",
+            "amount": 0.15,
             "operation": 2
           }
         ]

@@ -164,33 +164,33 @@
             "name": "generic.movementSpeed",
             "amount": 0.05,
             "operation": 2
+          }
+        ]
+      },
+      {
+        "name": "Legendary",
+        "color": "yellow",
+        "weight": 1,
+        "attributes": [
+          {
+            "name": "generic.armor",
+            "amount": 2,
+            "operation": 0
           },
           {
-            "name": "Legendary",
-            "color": "yellow",
-            "weight": 1,
-            "attributes": [
-              {
-                "name": "generic.armor",
-                "amount": 2,
-                "operation": 0
-              },
-              {
-                "name": "generic.armorToughness",
-                "amount": 1,
-                "operation": 0
-              },
-              {
-                "name": "potioncore.stepHeight",
-                "amount": 0.5,
-                "operation": 0
-              },
-              {
-                "name": "generic.movementSpeed",
-                "amount": 0.05,
-                "operation": 2
-              }
-            ]
+            "name": "generic.armorToughness",
+            "amount": 1,
+            "operation": 0
+          },
+          {
+            "name": "potioncore.stepHeight",
+            "amount": 0.5,
+            "operation": 0
+          },
+          {
+            "name": "generic.movementSpeed",
+            "amount": 0.05,
+            "operation": 2
           }
         ]
       }

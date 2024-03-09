@@ -1359,12 +1359,7 @@ recipes.addShaped("lolarecipe42",<armorunder:auto_leggings_liner>,
  [[<armorunder:flipflop_liner_material>,<armorunder:flipflop_liner_material>,<armorunder:flipflop_liner_material>],
   [<armorunder:flipflop_liner_material>,null,<armorunder:flipflop_liner_material>],
   [<armorunder:flipflop_liner_material>,null,<armorunder:flipflop_liner_material>]]);
-  
-recipes.addShaped("lolarecipe43",<waystones:waystone>,
- [[null,<minecraft:stonebrick>,null],
-  [<minecraft:stonebrick>,<minecraft:nether_star>,<minecraft:stonebrick>],
-  [<minecraft:obsidian>,<minecraft:obsidian>,<minecraft:obsidian>]]);
-  
+
 recipes.addShaped("lolarecipe44",<minecraft:diamond>,
  [[<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>],
   [<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>,<variedcommodities:coin_diamond>],

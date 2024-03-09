@@ -834,7 +834,7 @@ Wool, Ice : Speed I, Absorption 4hp
 MId--------
 Diamond, Netherite, Obsidian : Absorption 8hp, Res I
 Neptunium: Absorption 10hp, Water Breathing
-Fire Dragon : Fire resistance: Str II, Absorption 6hp
+Fire Dragon : Fire resistance, Str II, Absorption 6hp
 Ice dragon : Str II, Absorption 12hp
 Sea snake : Water Breathing, Str II
 Troll : Regeneration I, Absorption 10hp
@@ -842,7 +842,7 @@ Troll : Regeneration I, Absorption 10hp
 
 Late------
 Dragon : Creative Fly, Str II
-Golem : Regeneration II, Absorption 20hp, Res I
+Golem : Regeneration II, Absorption 20hp, Res II
 Living : Regeneration I, Absorption 8hp
-Sentient : Regeneration I, Absorption 12hp, Str I
+Sentient : Regeneration II, Absorption 12hp, Str I
 */

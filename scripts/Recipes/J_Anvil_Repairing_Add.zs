@@ -19,6 +19,12 @@ addRepairEntry(<aquaculture:neptunium_pickaxe>, <minecraft:emerald>);
 addRepairEntry(<aquaculture:neptunium_axe>, <minecraft:emerald>);
 addRepairEntry(<aquaculture:neptunium_shovel>, <minecraft:emerald>);
 addRepairEntry(<aquaculture:neptunium_hoe>, <minecraft:emerald>);
+
+addRepairEntry(<endreborn:armour_helmet_helmet>, <endreborn:item_shard_obsidian>);
+addRepairEntry(<endreborn:armour_boots_obsidian>, <endreborn:item_shard_obsidian>);
+addRepairEntry(<endreborn:armour_leggings_obsidian>, <endreborn:item_shard_obsidian>);
+addRepairEntry(<endreborn:armour_chestplate_obsidian>, <endreborn:item_shard_obsidian>);
+
 /*
 addRepairEntry(<cavern:hexcite_helmet>, <cavern:cave_item:2>);
 addRepairEntry(<cavern:hexcite_chestplate>, <cavern:cave_item:2>);
